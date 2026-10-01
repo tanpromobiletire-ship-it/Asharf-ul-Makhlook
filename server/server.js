@@ -65,14 +65,26 @@ async function handler(req,res){
   }
 
   if(req.url==='/api/public/stats'&&req.method==='GET'){
-   if(!pool)return json(res,200,{visitors:null,members:null,databaseConnected:false});
-   const [v,m]=await Promise.all([
-    pool.query(`select count(distinct visitor_key)::int total,
-      count(distinct visitor_key) filter(where created_at>=current_date)::int today
-      from visits`),
-    pool.query(`select count(*)::int total from users where member_status='active'`)
+   if(!pool)return json(res,200,{visitors:null,databaseConnected:false});
+   const v=await pool.query(`select
+      count(distinct visitor_key)::int total,
+      count(distinct visitor_key) filter(where created_at>=current_date)::int today,
+      count(distinct visitor_key) filter(where created_at>=now()-interval '7 days')::int week
+      from visits`);
+   return json(res,200,{databaseConnected:true,visitors:v.rows[0]});
+  }
+
+  if(req.url==='/api/member/stats'&&req.method==='GET'){
+   if(!pool)return json(res,503,{error:'database_not_connected'});
+   const u=await auth(req);if(!u)return json(res,401,{error:'unauthorized'});
+   const [m,a]=await Promise.all([
+    pool.query(`select count(*)::int total,
+      count(*) filter(where created_at>=current_date)::int new_today,
+      count(*) filter(where created_at>=now()-interval '7 days')::int new_week
+      from users where member_status='active'`),
+    pool.query(`select count(distinct user_id)::int active_week from sessions where created_at>=now()-interval '7 days'`)
    ]);
-   return json(res,200,{databaseConnected:true,visitors:v.rows[0],members:{total:m.rows[0].total}});
+   return json(res,200,{members:{...m.rows[0],activeWeek:a.rows[0].active_week}});
   }
 
   if(req.url==='/api/visit'&&req.method==='POST'){
