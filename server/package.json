@@ -1,0 +1,8 @@
+{
+  "name":"asharf-ul-makhlook-api",
+  "version":"0.1.0",
+  "private":true,
+  "type":"commonjs",
+  "scripts":{"start":"node server.js"},
+  "dependencies":{"pg":"^8.13.1"}
+}
