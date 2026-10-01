@@ -1,11 +1,11 @@
 # Asharf-ul-Makhlook V16
 
-Current build: V16-statistics-workspace-2026-10-01n.
+Current build: V16-cloud-account-connection-2026-10-01o.
 
 ## Integrity
 
 `index.html` SHA-256:
-`daeedbeae49295741520d08e723def2ac5172603d3d345ed3a9c9d77931f4bab`
+`a850c0bf0cff25fda208be628ebd6a93a1bd343c9798eea5c0a5a44656c148e7`
 
 The deployment copy must match this checksum before production verification begins.
 
@@ -21,7 +21,7 @@ Material changes invalidate prior GREEN status until affected regression and pro
 
 ## Navigation update
 
-39 screens; six home task tiles; grouped searchable directory; breadcrumbs; compact mobile menu. Existing demo records remain in browser local storage. Demo roles are not production authentication.
+40 screens; six home task tiles; grouped searchable directory; breadcrumbs; compact mobile menu. Existing demo records remain in browser local storage. Demo roles are not production authentication.
 
 ## Deployment
 
@@ -29,7 +29,7 @@ The frontend is a static site: publish the repository root with no build command
 
 ## Validation
 
-The organized navigation passed 223 headless Edge checks across 39 screens and 320, 375, 768, and 1280 pixel widths. Live integrations and production verification remain subject to the policy above.
+The organized navigation passed 249 headless Edge checks across 40 screens and 320, 375, 768, and 1280 pixel widths. Live integrations and production verification remain subject to the policy above.
 
 Run the navigation regression on Windows with Node and Microsoft Edge installed: node tests/organized-navigation.mjs. The test uses an isolated temporary browser profile and disables external requests.
 
@@ -39,4 +39,22 @@ Open Statistics from Community or All sections. Choose Live service for API stat
 
 Built and tested: public/member/admin view navigation, metric search, loading, pending database, success, empty and error states, request timeouts, stale-response protection, local account creation/sign-in/profile changes, saved-state initialization and responsive layouts.
 
-Not connected: production database, production member/admin authorization, live presence, privacy-safe geography, signup-failure analytics, retention, verification-rate analytics, SMS and email verification. No feature is promoted to production green by this release.
+Connected: the API and Postgres database; public visitor statistics are available from the live API.
+
+Not production-verified: member authentication and account lifecycle.
+
+Not connected: production admin authorization, live presence, privacy-safe geography, signup-failure analytics, retention, verification-rate analytics, SMS and email verification. No feature is promoted to production green by this release.
+
+## Account service connection
+
+Open Account service from the account menu, local membership page or All sections. Registration sends details to the API and creates only a pending account. It cannot approve or verify the account. SMS, email verification, recovery and MFA remain unconnected. Only already-active accounts can sign in.
+
+The service token remains in page memory and is discarded on reload. It is never stored with prototype records. A session check fetches the real account and aggregate member totals. Logout revokes the server session; failed revocation is reported explicitly. Local demo accounts and aid records remain separate from production sign-in.
+
+Database setup is through the API service Environment settings: DATABASE_URL is the private Internal Database URL and FRONTEND_ORIGIN is the frontend origin. Do not place connection credentials in this repository. After changing server code, manually deploy both services because automatic code deployment is disabled.
+
+Tests: node tests/organized-navigation.mjs runs browser workflows with mocked API responses and isolated test storage. node tests/api-contract.mjs runs 23 server contract checks with a simulated database. These are not two-account production acceptance tests. Live read-only deployment checks separately verify health, public stats and rejection of anonymous member access.
+
+Production verification still requires real two-account workflows, verification delivery, abuse/rate-limit controls, credential/session review, persistence and security testing, launch privacy review and the full 12-condition policy. Keep status yellow until that evidence exists.
+
+The current free database expires October 31, 2026. Arrange retention and backups before keeping real applicant or donor data.

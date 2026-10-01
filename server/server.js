@@ -52,7 +52,7 @@ async function auth(req){
  const t=h.slice(7);
  const r=await pool.query(`select u.id,u.email,u.phone,u.display_name,u.member_status,u.email_verified,u.phone_verified
  from sessions s join users u on u.id=s.user_id
- where s.token_hash=$1 and s.expires_at>now()`,[tokenHash(t)]);
+ where s.token_hash=$1 and s.expires_at>now() and u.member_status='active'`,[tokenHash(t)]);
  return r.rows[0]||null;
 }
 
@@ -99,7 +99,7 @@ async function handler(req,res){
   if(req.url==='/api/auth/register'&&req.method==='POST'){
    if(!pool)return json(res,503,{error:'database_not_connected'});
    const b=await readBody(req),email=normEmail(b.email),phone=cleanPhone(b.phone),name=String(b.displayName||'').trim().slice(0,80),password=String(b.password||'');
-   if(!email||!phone||!name||password.length<10)return json(res,400,{error:'valid_email_phone_name_and_10_char_password_required'});
+   if(!/^\S+@\S+\.\S+$/.test(email)||email.length>160||!/^\+?[0-9]{8,15}$/.test(phone)||!name||password.length<10||password.length>128)return json(res,400,{error:'valid_email_phone_name_and_10_char_password_required'});
    const hp=hashPassword(password);
    try{
     const r=await pool.query(`insert into users(email,phone,display_name,password_salt,password_hash)
@@ -113,14 +113,23 @@ async function handler(req,res){
   if(req.url==='/api/auth/login'&&req.method==='POST'){
    if(!pool)return json(res,503,{error:'database_not_connected'});
    const b=await readBody(req),email=normEmail(b.email),password=String(b.password||'');
+   if(!email||password.length>128)return json(res,401,{error:'invalid_credentials'});
    const r=await pool.query('select * from users where email=$1',[email]),u=r.rows[0];
    if(!u)return json(res,401,{error:'invalid_credentials'});
    const hp=hashPassword(password,u.password_salt);
-   if(hp.hash!==u.password_hash)return json(res,401,{error:'invalid_credentials'});
+   if(typeof u.password_hash!=='string'||u.password_hash.length!==hp.hash.length||!crypto.timingSafeEqual(Buffer.from(hp.hash),Buffer.from(u.password_hash)))return json(res,401,{error:'invalid_credentials'});
    if(u.member_status!=='active')return json(res,403,{error:'verification_required',phoneVerified:u.phone_verified,emailVerified:u.email_verified});
    const t=token();
    await pool.query(`insert into sessions(user_id,token_hash,expires_at) values($1,$2,now()+interval '30 days')`,[u.id,tokenHash(t)]);
    return json(res,200,{token:t,user:{id:u.id,email:u.email,phone:u.phone,displayName:u.display_name}});
+  }
+
+  if(req.url==='/api/auth/logout'&&req.method==='POST'){
+   if(!pool)return json(res,503,{error:'database_not_connected'});
+   const h=req.headers.authorization||'';
+   if(!h.startsWith('Bearer ')||h.length<=7)return json(res,401,{error:'unauthorized'});
+   await pool.query('delete from sessions where token_hash=$1',[tokenHash(h.slice(7))]);
+   return json(res,200,{ok:true});
   }
 
   if(req.url==='/api/me'&&req.method==='GET'){
@@ -130,7 +139,8 @@ async function handler(req,res){
 
   return json(res,404,{error:'not_found'});
  }catch(e){
-  console.error(e);
+  if(e instanceof SyntaxError)return json(res,400,{error:'invalid_json'});
+  console.error('API request failed',e.code||e.name||'unknown');
   return json(res,500,{error:'server_error'});
  }
 }
