@@ -1,10 +1,10 @@
 # Asharf-ul-Makhlook — complete requirements
 
-Build: V16-free-help-mission-2026-10-02s. **145 requirements; 0 green; 112 yellow; 33 red. Strict production-verified completion: 0%.**
+Build: V16-request-experience-2026-10-02t. **145 requirements; 0 green; 112 yellow; 33 red. Strict production-verified completion: 0%.**
 
 All 144 prior requirements are retained. VAR-145 adds the user-requested free-help mission for humans, animals, plants and all living things.
 
-422/422 browser assertions passed. Production integration, real end-to-end, two active verified accounts, physical device/network testing and full legal/configuration review remain incomplete. Historical live receipts identify their own earlier builds and do not automatically approve this one.
+444/444 browser assertions passed. Production integration, real end-to-end, two active verified accounts, physical device/network testing and full legal/configuration review remain incomplete. Historical live receipts identify their own earlier builds and do not automatically approve this one.
 
 ## Twelve required conditions
 
@@ -31,7 +31,7 @@ All 144 prior requirements are retained. VAR-145 adds the user-requested free-he
 | VAR-004 | Role/view switcher | 🟡 Yellow | Prototype workflows | [overview](https://asharf-ul-makhlook.onrender.com/#overview) | Caseworker, Applicant and Supporter demo views are available. | Re-run current-version acceptance after any change; downgrade to yellow until reverified. |
 | VAR-005 | User account & participation roles | 🟡 Yellow | Prototype workflows | [accounts](https://asharf-ul-makhlook.onrender.com/#accounts) | Local prototype accounts can choose Need Help, Help Provider or Both. | Re-run current-version acceptance after any change; downgrade to yellow until reverified. |
 | VAR-006 | Local sign-in, session & profile | 🟡 Yellow | Prototype workflows | [integrations](https://asharf-ul-makhlook.onrender.com/#integrations) | New local accounts use salted password hashes, device-local sessions and editable profiles. | Re-run current-version acceptance after any change; downgrade to yellow until reverified. |
-| VAR-007 | Help request CRUD | 🟡 Yellow | Prototype workflows | [requests](https://asharf-ul-makhlook.onrender.com/#requests) | Create, edit, search and persist test requests locally. | Re-run current-version acceptance after any change; downgrade to yellow until reverified. |
+| VAR-007 | Help request CRUD | 🟡 Yellow | Prototype workflows | [requests](https://asharf-ul-makhlook.onrender.com/#requests) | Readable request cards, public-safe search, status/need filters, focused details, next-step explanations, membership-gated saving and local edit guard; saved records persist. | Re-run current-version acceptance after any change; downgrade to yellow until reverified. |
 | VAR-008 | Case review workflow | 🟡 Yellow | Prototype workflows | [review](https://asharf-ul-makhlook.onrender.com/#review) | Caseworker can change status and public update. | Re-run current-version acceptance after any change; downgrade to yellow until reverified. |
 | VAR-009 | Corrections & appeals | 🟡 Yellow | Prototype workflows | [appeals](https://asharf-ul-makhlook.onrender.com/#appeals) | Appeal/correction records can be saved. | Re-run current-version acceptance after any change; downgrade to yellow until reverified. |
 | VAR-010 | Aid delivery planning | 🟡 Yellow | Prototype workflows | [delivery](https://asharf-ul-makhlook.onrender.com/#delivery) | Delivery plan records can be saved. | Re-run current-version acceptance after any change; downgrade to yellow until reverified. |
