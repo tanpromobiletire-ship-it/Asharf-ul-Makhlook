@@ -5,7 +5,7 @@ Current build: V16-free-help-mission-2026-10-02s.
 ## Integrity
 
 `index.html` SHA-256:
-`7112c25796775d9a8efec4fa35c18392065c1a54c4f8c9f17668139dc4cd8cf7`
+`9009de8e757ecefc45b4eabd98ddd3ff2e896770869137736b064f75ce47d770`
 
 Normalize CRLF to LF before hashing. The deployment copy must match this checksum before production verification begins.
 
@@ -75,3 +75,6 @@ Live verification: 15/15 read-only source/service smoke checks passed on 2026-10
 
 ## Current Request Experience release
 444 browser checks passed. Current register: 145 requirements, 0 green, 112 yellow, 33 red. See reports/Release-Request-Experience.md for current built/tested/not-connected scope. Earlier release receipts are historical evidence for their recorded builds.
+
+## Current Community Experience release
+468 browser checks passed. Current register: 145 requirements, 0 green, 112 yellow, 33 red. See reports/Release-Community-Experience.md for current built/tested/not-connected scope. Earlier release receipts are historical evidence for their recorded builds.

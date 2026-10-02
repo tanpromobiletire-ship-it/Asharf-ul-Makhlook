@@ -1,0 +1,10 @@
+{
+  "build": "V16-community-experience-2026-10-02u",
+  "type": "Isolated headless Edge regression summary; not production acceptance",
+  "passed": 468,
+  "total": 468,
+  "errors": [],
+  "failures": [],
+  "normalizedSHA256": "9009de8e757ecefc45b4eabd98ddd3ff2e896770869137736b064f75ce47d770",
+  "scope": "Existing 444 checks plus 20 community workflow checks and four Ask the World responsive-width checks. Two local account fixtures only."
+}
