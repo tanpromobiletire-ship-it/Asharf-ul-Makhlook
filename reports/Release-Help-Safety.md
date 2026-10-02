@@ -17,3 +17,5 @@ The existing account API/Postgres connection remains; verified account delivery,
 Run node tests/organized-navigation.mjs on Windows with Node and Edge installed; it uses an isolated profile and blocks external requests.
 Run node tests/api-contract.mjs for simulated server contract checks.
 Open requests, review, appeals, alerts and variableAudit from the searchable All sections directory.
+
+Live verification: 15/15 read-only source/service smoke checks passed on 2026-10-02T02:48:04.532Z. Deployed source matched the tested source after CRLF normalization; all 41 screens and 144 variables, current CSV, connected API/Postgres and public stats were verified. This does not certify real casework, emergency delivery or all twelve production conditions. Receipt: reports/Help-Safety-Live-Results.json.

@@ -1,0 +1,71 @@
+{
+  "build": "V16-help-safety-2026-10-02r",
+  "frontendCommit": "435f76c",
+  "at": "2026-10-02T02:48:04.532Z",
+  "normalizedSHA256": "fc9be79a45ce3ebdedd66ab414a7d958a243d81aba3d6c2c2e02cbea7bca6126",
+  "type": "Live source integrity and read-only service smoke checks",
+  "passed": 15,
+  "total": 15,
+  "results": [
+    {
+      "name": "Frontend HTTP 200",
+      "pass": true
+    },
+    {
+      "name": "Deployed source matches tested source",
+      "pass": true
+    },
+    {
+      "name": "Current help-safety build",
+      "pass": true
+    },
+    {
+      "name": "All 144 unique variables retained",
+      "pass": true
+    },
+    {
+      "name": "Baseline yellow111 red33",
+      "pass": true
+    },
+    {
+      "name": "41 screens retained",
+      "pass": true
+    },
+    {
+      "name": "Consent and help expectations published",
+      "pass": true
+    },
+    {
+      "name": "Fair and independent review published",
+      "pass": true
+    },
+    {
+      "name": "Eight safety categories",
+      "pass": true
+    },
+    {
+      "name": "Alert source timing uncertainty fields",
+      "pass": true
+    },
+    {
+      "name": "Fiction and risk disclaimers",
+      "pass": true
+    },
+    {
+      "name": "Local saved data key preserved",
+      "pass": true
+    },
+    {
+      "name": "Published CSV has all 144 variables",
+      "pass": true
+    },
+    {
+      "name": "API/Postgres remains connected",
+      "pass": true
+    },
+    {
+      "name": "Public stats remains available",
+      "pass": true
+    }
+  ]
+}

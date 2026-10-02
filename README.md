@@ -67,3 +67,5 @@ A lab/closure/hosting check no longer automatically grants every variable produc
 
 ## Anonymous Help and Safety update
 Consent, expectations, scam warnings, fair demo review, independent appeals and categorized test alerts are implemented. Read reports/Release-Help-Safety.md for the exact tested scope and production gaps. The register has 144 variables: 0 green, 111 yellow, 33 red.
+
+Live verification: 15/15 read-only source/service smoke checks passed on 2026-10-02T02:48:04.532Z. Deployed source matched the tested source after CRLF normalization; all 41 screens and 144 variables, current CSV, connected API/Postgres and public stats were verified. This does not certify real casework, emergency delivery or all twelve production conditions. Receipt: reports/Help-Safety-Live-Results.json.
