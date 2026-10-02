@@ -1,0 +1,63 @@
+{
+  "build": "V16-free-help-mission-2026-10-02s",
+  "commit": "d08d990",
+  "at": "2026-10-02T22:11:59.866Z",
+  "type": "Live source-integrity and read-only smoke checks; not full production acceptance",
+  "passed": 13,
+  "total": 13,
+  "normalizedSHA256": "9a91c973b1b28bfafdcc4aef0c4691862b108990840bae105d5e17b34deb115c",
+  "results": [
+    {
+      "name": "Frontend HTTP200",
+      "pass": true
+    },
+    {
+      "name": "Deployed source matches tested source",
+      "pass": true
+    },
+    {
+      "name": "Current mission build",
+      "pass": true
+    },
+    {
+      "name": "145 unique requirements",
+      "pass": true
+    },
+    {
+      "name": "0 green112yellow33red",
+      "pass": true
+    },
+    {
+      "name": "Mission and safe prototype limits",
+      "pass": true
+    },
+    {
+      "name": "Animal and plant request categories",
+      "pass": true
+    },
+    {
+      "name": "No immunity guarantee installed",
+      "pass": true
+    },
+    {
+      "name": "Storage key unchanged",
+      "pass": true
+    },
+    {
+      "name": "41 screens retained",
+      "pass": true
+    },
+    {
+      "name": "Published CSV includes all145",
+      "pass": true
+    },
+    {
+      "name": "Release report available",
+      "pass": true
+    },
+    {
+      "name": "Existing API/database connected",
+      "pass": true
+    }
+  ]
+}
