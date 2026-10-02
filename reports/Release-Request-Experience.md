@@ -12,3 +12,5 @@ Not connected: secure real casework, staff/partners, aid dispatch, payments, off
 Status: 0 green, 112 yellow, 33 red. Strict production-verified completion remains 0%; all twelve conditions require exact-build per-variable evidence before GREEN.
 
 Deployment: static root on Render with no build command; automatic deploy is off, so publish only after regression checks and authorized push. Local regression: node tests/organized-navigation.mjs on Windows with Node and Edge.
+
+Live verification: Published deployment dep-db02vle7bikc73fvr5qg is live at commit 805a81e2929760b5d602bea71ea99261b51b7ec8. On 2026-10-02, all 16 read-only smoke and source-integrity checks passed. Published HTML matches the tested source after newline normalization. See Request-Experience-Live-Results.json. These checks do not constitute full production acceptance; statuses remain 0 green, 112 yellow, 33 red.

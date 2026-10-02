@@ -1,0 +1,75 @@
+{
+  "build": "V16-request-experience-2026-10-02t",
+  "commit": "805a81e",
+  "at": "2026-10-02T22:29:51.506Z",
+  "type": "Live source-integrity and read-only smoke checks; not full production acceptance",
+  "passed": 16,
+  "total": 16,
+  "normalizedSHA256": "7112c25796775d9a8efec4fa35c18392065c1a54c4f8c9f17668139dc4cd8cf7",
+  "results": [
+    {
+      "name": "Frontend HTTP200",
+      "pass": true
+    },
+    {
+      "name": "Deployed source matches tested source",
+      "pass": true
+    },
+    {
+      "name": "Current request experience build",
+      "pass": true
+    },
+    {
+      "name": "145 unique requirements",
+      "pass": true
+    },
+    {
+      "name": "0 green112yellow33red",
+      "pass": true
+    },
+    {
+      "name": "Mission and safe prototype limits",
+      "pass": true
+    },
+    {
+      "name": "Animal and plant request categories",
+      "pass": true
+    },
+    {
+      "name": "No immunity guarantee installed",
+      "pass": true
+    },
+    {
+      "name": "Storage key unchanged",
+      "pass": true
+    },
+    {
+      "name": "41 screens retained",
+      "pass": true
+    },
+    {
+      "name": "Published CSV includes all145",
+      "pass": true
+    },
+    {
+      "name": "Release report available",
+      "pass": true
+    },
+    {
+      "name": "Existing API/database connected",
+      "pass": true
+    },
+    {
+      "name": "Home visitor/member entry published",
+      "pass": true
+    },
+    {
+      "name": "Request filters and dialog published",
+      "pass": true
+    },
+    {
+      "name": "Details role refresh and edit guard published",
+      "pass": true
+    }
+  ]
+}
