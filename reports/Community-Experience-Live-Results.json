@@ -1,0 +1,87 @@
+{
+  "build": "V16-community-experience-2026-10-02u",
+  "commit": "32a99f81b1dcd92cc8d3025a914cf945eed5518c",
+  "at": "2026-10-02T23:12:35.375Z",
+  "type": "Live source-integrity and read-only smoke checks; not full production acceptance",
+  "passed": 19,
+  "total": 19,
+  "normalizedSHA256": "9009de8e757ecefc45b4eabd98ddd3ff2e896770869137736b064f75ce47d770",
+  "results": [
+    {
+      "name": "Frontend HTTP200",
+      "pass": true
+    },
+    {
+      "name": "Published source matches tested source",
+      "pass": true
+    },
+    {
+      "name": "Current community build",
+      "pass": true
+    },
+    {
+      "name": "145 unique requirements",
+      "pass": true
+    },
+    {
+      "name": "0 green112yellow33red",
+      "pass": true
+    },
+    {
+      "name": "Mission and prototype limits",
+      "pass": true
+    },
+    {
+      "name": "Animal and plant categories",
+      "pass": true
+    },
+    {
+      "name": "No immunity guarantee",
+      "pass": true
+    },
+    {
+      "name": "Storage key preserved",
+      "pass": true
+    },
+    {
+      "name": "41 screens retained",
+      "pass": true
+    },
+    {
+      "name": "Published CSV includes all145",
+      "pass": true
+    },
+    {
+      "name": "Release report available",
+      "pass": true
+    },
+    {
+      "name": "Existing API/database connected",
+      "pass": true
+    },
+    {
+      "name": "Visitor/member starting buttons retained",
+      "pass": true
+    },
+    {
+      "name": "Request details and filters retained",
+      "pass": true
+    },
+    {
+      "name": "Community filters and counts published",
+      "pass": true
+    },
+    {
+      "name": "Member reaction guard published",
+      "pass": true
+    },
+    {
+      "name": "Toggle reaction and dislike published",
+      "pass": true
+    },
+    {
+      "name": "Owner status guard published",
+      "pass": true
+    }
+  ]
+}

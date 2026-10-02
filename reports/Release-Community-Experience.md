@@ -12,3 +12,5 @@ Not connected: production post/response/reaction synchronization, server-enforce
 Status: 0 green, 112 yellow, 33 red. Strict production-verified completion remains 0%; all 12 conditions need exact-build per-variable evidence before GREEN.
 
 Deployment: existing Render static root, no build command, automatic deployment off. Regression command: node tests/organized-navigation.mjs on Windows with Node and Edge. README retains deployment instructions. Publish only after full scoped regression and authorized push; record live source integrity and API health separately.
+
+Live verification: On 2026-10-02 at 23:12 UTC, all 19 live source-integrity and read-only smoke checks passed at source commit 32a99f81b1dcd92cc8d3025a914cf945eed5518c. Render deployment dep-db03kfegekts73826vlg is live. Published HTML matches the tested source after newline normalization; the existing API/database health check passed. See Community-Experience-Live-Results.json. These scoped checks do not approve production acceptance or change the status counts.
