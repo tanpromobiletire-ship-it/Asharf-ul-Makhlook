@@ -1,11 +1,11 @@
 # Asharf-ul-Makhlook V16
 
-Current build: V16-help-safety-2026-10-02r.
+Current build: V16-free-help-mission-2026-10-02s.
 
 ## Integrity
 
 `index.html` SHA-256:
-`fc9be79a45ce3ebdedd66ab414a7d958a243d81aba3d6c2c2e02cbea7bca6126`
+`9a91c973b1b28bfafdcc4aef0c4691862b108990840bae105d5e17b34deb115c`
 
 Normalize CRLF to LF before hashing. The deployment copy must match this checksum before production verification begins.
 
@@ -69,3 +69,6 @@ A lab/closure/hosting check no longer automatically grants every variable produc
 Consent, expectations, scam warnings, fair demo review, independent appeals and categorized test alerts are implemented. Read reports/Release-Help-Safety.md for the exact tested scope and production gaps. The register has 144 variables: 0 green, 111 yellow, 33 red.
 
 Live verification: 15/15 read-only source/service smoke checks passed on 2026-10-02T02:48:04.532Z. Deployed source matched the tested source after CRLF normalization; all 41 screens and 144 variables, current CSV, connected API/Postgres and public stats were verified. This does not certify real casework, emergency delivery or all twelve production conditions. Receipt: reports/Help-Safety-Live-Results.json.
+
+## Current Free Help Mission release
+422 browser checks passed. Current register: 145 requirements, 0 green, 112 yellow, 33 red. See reports/Release-Free-Help.md for current built/tested/not-connected scope. Earlier release receipts are historical evidence for their recorded builds.

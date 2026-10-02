@@ -1,35 +1,25 @@
-# Asharf-ul-Makhlook — all variables and 12-condition audit
+# Asharf-ul-Makhlook — complete requirements
 
-Audit build: V16-help-safety-2026-10-02r. Status baseline: **144 variables; 0 green; 111 yellow; 33 red. Strict fully verified completion: 0%.** This percentage counts only items with all 12 required conditions approved; it is not an estimate of work effort.
+Build: V16-free-help-mission-2026-10-02s. **145 requirements; 0 green; 112 yellow; 33 red. Strict production-verified completion: 0%.**
 
-The list includes all 65 previously tracked roadmap rows and 79 additional individually tracked details. Broad items and detailed requirements are separately listed for traceability. No previous roadmap row was excluded.
+All 144 prior requirements are retained. VAR-145 adds the user-requested free-help mission for humans, animals, plants and all living things.
 
-Current checks: 403 browser assertions and 23 simulated API contract assertions passed. Eight live checks before redeployment passed, including database health, public stats, anonymous-access denial, two TEST pending registrations and blocked login. Account persistence across API redeployment is a separate final check. Two TEST pending records remain in the database; no passwords were saved and no account was promoted or verification bypassed.
+422/422 browser assertions passed. Production integration, real end-to-end, two active verified accounts, physical device/network testing and full legal/configuration review remain incomplete. Historical live receipts identify their own earlier builds and do not automatically approve this one.
 
-## The twelve conditions
+## Twelve required conditions
 
-| # | Condition | Current result / limit |
-|---|---|---|
-|1|Built|Partial across the project; missing features are red.|
-|2|Integrated|Partial; many aid/community records and services remain local or unconnected.|
-|3|Tests passed|Scoped suites passed; no claim that all required acceptance exists for every feature.|
-|4|Browser/device|Desktop Chromium and 320/375/768/1280 responsive widths tested; physical mobile acceptance remains open.|
-|5|Deployed|Published components are checked separately from feature completion. Missing features are not deployed workflows.|
-|6|Production configuration|API/database connection works; feature-specific configuration, permissions, retention and providers are incomplete.|
-|7|Real end-to-end|Pending/blocked for real complete aid/account/community workflows.|
-|8|Two authenticated accounts|Blocked: the two real TEST registrations are pending and correctly cannot sign in.|
-|9|Cross-device/network|Blocked: no second physical device and independent network acceptance.|
-|10|Backend persistence|Account writes are live; redeployment persistence retest is separate. Other records remain local.|
-|11|No critical/high defects|Full functional/security defect review has not passed. Missing required workflows are explicitly listed.|
-|12|Recorded evidence|This report, per-variable register, tests and source preserve findings and remaining gaps. Approved production evidence still requires exact build and variable.|
-
-A generic lab result no longer grants tests/browser/deployment evidence to every variable. Green requires explicit current-build per-variable evidence for all 12 conditions and no unresolved critical/high blocker. This audit does not certify legal, safeguarding, emergency-alert or financial operations.
-
-## Omissions and regressions found
-
-The earlier audit found missing Anonymous Help and Safety requirements. This release implements 17 of those as local TEST workflows, moving them from red to yellow. See Release-Help-Safety.md for built/tested/not-connected scope. Verified feeds, source vetting, real risk maps and production caseworker access remain unconnected.
-
-Database notes were stale and are corrected: the private API/Postgres connection and public stats are working. Backups, retention and the free database expiry on October 31, 2026 still need a plan.
+1. Built — Partial: implementation requires acceptance
+2. Integrated — Partial: production integrations pending
+3. Tests passed — Partial: scoped tests only
+4. Browser/device — Partial: desktop and responsive widths only
+5. Deployed — Published component; workflow unverified
+6. Production configuration — Partial: feature-specific configuration pending
+7. Real end-to-end — Blocked: real full workflow pending
+8. Two authenticated accounts — Blocked: verified account delivery missing
+9. Cross-device/network — Blocked: second physical device/network needed
+10. Backend persistence — Partial: many records still local
+11. No critical/high defects — Pending: full defect review
+12. Recorded evidence — Recorded scope and gaps
 
 ## Complete list
 
@@ -48,7 +38,7 @@ Database notes were stale and are corrected: the private API/Postgres connection
 | VAR-011 | Concern reporting | 🟡 Yellow | Prototype workflows | [concerns](https://asharf-ul-makhlook.onrender.com/#concerns) | Anonymous/local concern records can be saved. | Re-run current-version acceptance after any change; downgrade to yellow until reverified. |
 | VAR-012 | Giving shell | 🟡 Yellow | Prototype workflows | [explore](https://asharf-ul-makhlook.onrender.com/#explore) | Supporter can create a fictional pledge. | Re-run current-version acceptance after any change; downgrade to yellow until reverified. |
 | VAR-013 | Safety information shell | 🟡 Yellow | Prototype workflows | [explore](https://asharf-ul-makhlook.onrender.com/#explore) | Sample alerts can be created and viewed. | Re-run current-version acceptance after any change; downgrade to yellow until reverified. |
-| VAR-014 | Purpose & safeguards | 🟡 Yellow | Prototype workflows | [purpose](https://asharf-ul-makhlook.onrender.com/#purpose) | Safeguards and launch gaps are documented. | Re-run current-version acceptance after any change; downgrade to yellow until reverified. |
+| VAR-014 | Purpose & safeguards | 🟡 Yellow | Prototype workflows | [purpose](https://asharf-ul-makhlook.onrender.com/#purpose) | Organized mission/safety page, scam warnings, factual prototype/API limits and four clickable next-step tiles; legal readiness remains unverified. | Re-run current-version acceptance after any change; downgrade to yellow until reverified. |
 | VAR-015 | Roadmap status centre | 🟡 Yellow | Prototype workflows | [roadmap](https://asharf-ul-makhlook.onrender.com/#roadmap) | Green/yellow/red status, search and counts are shown. | Re-run current-version acceptance after any change; downgrade to yellow until reverified. |
 | VAR-016 | Local persistence | 🟡 Yellow | Prototype workflows | [requests](https://asharf-ul-makhlook.onrender.com/#requests) | Test records survive page refresh using localStorage. | Replace with secure backend for real use. |
 | VAR-017 | Responsive mobile pass | 🟡 Yellow | Prototype workflows | [verificationLab](https://asharf-ul-makhlook.onrender.com/#verificationLab) | Responsive rules and narrow-width shell checks passed in V8 verification. | Re-run verification after layout changes. |
@@ -179,13 +169,4 @@ Database notes were stale and are corrected: the private API/Postgres connection
 | VAR-142 | Telegram profile / sharing | 🟡 Yellow | Social profiles | [sharing](https://asharf-ul-makhlook.onrender.com/#sharing) | Local sharing/profile configuration exists. No provider account authentication is implied. | Test this profile/link on the current build; connect provider authorization only if required. |
 | VAR-143 | WhatsApp profile / sharing | 🟡 Yellow | Social profiles | [sharing](https://asharf-ul-makhlook.onrender.com/#sharing) | Local sharing/profile configuration exists. No provider account authentication is implied. | Test this profile/link on the current build; connect provider authorization only if required. |
 | VAR-144 | Complete variable register & omission audit | 🟡 Yellow | Project control | [variableAudit](https://asharf-ul-makhlook.onrender.com/#variableAudit) | Unified register, detailed gaps, screen coverage and 12-condition results are being added. | Execute current-build register, export, status, route and coverage checks; retain evidence. |
-
-The CSV includes all twelve condition results for each of the 144 variables. The live register offers grouped navigation, text/status/tracking filters, copy, download and links to every screen.
-
-## Final release checks
-
-After API redeployment, 6/6 live checks passed, including confirmation that both clearly marked TEST pending account records persisted. Published asset checks passed 7/7: build, 41 screens, 144 registry variables and CSV rows, original storage key, and removed blanket evidence assignment. The browser suite passed 330/330; simulated API contract suite passed 23/23. See Audit-Live-Results.json for the recorded scope and limits.
-
-Condition 8 still does not pass: neither TEST account is verified/authenticated. Condition 9 has not executed on another physical device/network. Full production end-to-end and critical/high-defect review remain pending. These results do not turn any feature green.
-
-Live verification: 15/15 read-only source/service smoke checks passed on 2026-10-02T02:48:04.532Z. Deployed source matched the tested source after CRLF normalization; all 41 screens and 144 variables, current CSV, connected API/Postgres and public stats were verified. This does not certify real casework, emergency delivery or all twelve production conditions. Receipt: reports/Help-Safety-Live-Results.json.
+| VAR-145 | Free-help mission: humans, animals, plants and all living things | 🟡 Yellow | Mission & care | [purpose](https://asharf-ul-makhlook.onrender.com/#purpose) | Mission and plain-language safety notice; clickable next-step tiles; local animal/plant test request categories. | Verify real operations, care partners, permissions and all 12 production conditions. |
