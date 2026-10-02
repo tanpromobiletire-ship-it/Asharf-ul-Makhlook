@@ -1,13 +1,13 @@
 # Asharf-ul-Makhlook V16
 
-Current build: V16-full-variable-audit-2026-10-02p.
+Current build: V16-help-safety-2026-10-02r.
 
 ## Integrity
 
 `index.html` SHA-256:
-`e2c9483ad3c2c4a4d0d557218557c4f416db1f9d6cfff567936d0ca803252a12`
+`fc9be79a45ce3ebdedd66ab414a7d958a243d81aba3d6c2c2e02cbea7bca6126`
 
-The deployment copy must match this checksum before production verification begins.
+Normalize CRLF to LF before hashing. The deployment copy must match this checksum before production verification begins.
 
 ## Verification policy
 
@@ -29,7 +29,7 @@ The frontend is a static site: publish the repository root with no build command
 
 ## Validation
 
-The organized navigation passed 330 headless Edge checks across 41 screens and 320, 375, 768, and 1280 pixel widths. Live integrations and production verification remain subject to the policy above.
+The organized navigation passed 403 headless Edge checks across 41 screens and 320, 375, 768, and 1280 pixel widths. Live integrations and production verification remain subject to the policy above.
 
 Run the navigation regression on Windows with Node and Microsoft Edge installed: node tests/organized-navigation.mjs. The test uses an isolated temporary browser profile and disables external requests.
 
@@ -61,6 +61,9 @@ The current free database expires October 31, 2026. Arrange retention and backup
 
 ## Full variable audit
 
-All variables & 12 checks contains 144 variables: the previous 65 roadmap rows and 79 individually tracked requirements, metrics, social profiles and the register itself. Baseline 0 green, 94 yellow, 50 red. reports/All-Variables.md and reports/All-Variables.csv provide the full list and remaining gaps. All 41 screens are in the directory. No previously tracked row was removed.
+All variables & 12 checks contains 144 variables: the previous 65 roadmap rows and 79 individually tracked requirements, metrics, social profiles and the register itself. Baseline 0 green, 111 yellow, 33 red. reports/All-Variables.md and reports/All-Variables.csv provide the full list and remaining gaps. All 41 screens are in the directory. No previously tracked row was removed.
 
 A lab/closure/hosting check no longer automatically grants every variable production tests/browser/deployed conditions. Only explicit current-build per-variable approvals do. Generic historical acceptance notes do not certify this build.
+
+## Anonymous Help and Safety update
+Consent, expectations, scam warnings, fair demo review, independent appeals and categorized test alerts are implemented. Read reports/Release-Help-Safety.md for the exact tested scope and production gaps. The register has 144 variables: 0 green, 111 yellow, 33 red.
