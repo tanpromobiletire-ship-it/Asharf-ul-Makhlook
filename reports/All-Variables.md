@@ -181,3 +181,9 @@ Database notes were stale and are corrected: the private API/Postgres connection
 | VAR-144 | Complete variable register & omission audit | 🟡 Yellow | Project control | [variableAudit](https://asharf-ul-makhlook.onrender.com/#variableAudit) | Unified register, detailed gaps, screen coverage and 12-condition results are being added. | Execute current-build register, export, status, route and coverage checks; retain evidence. |
 
 The CSV includes all twelve condition results for each of the 144 variables. The live register offers grouped navigation, text/status/tracking filters, copy, download and links to every screen.
+
+## Final release checks
+
+After API redeployment, 6/6 live checks passed, including confirmation that both clearly marked TEST pending account records persisted. Published asset checks passed 7/7: build, 41 screens, 144 registry variables and CSV rows, original storage key, and removed blanket evidence assignment. The browser suite passed 330/330; simulated API contract suite passed 23/23. See Audit-Live-Results.json for the recorded scope and limits.
+
+Condition 8 still does not pass: neither TEST account is verified/authenticated. Condition 9 has not executed on another physical device/network. Full production end-to-end and critical/high-defect review remain pending. These results do not turn any feature green.

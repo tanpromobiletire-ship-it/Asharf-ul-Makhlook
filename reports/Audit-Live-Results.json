@@ -1,0 +1,43 @@
+{
+  "build": "V16-full-variable-audit-2026-10-02p",
+  "variables": 144,
+  "baseline": {
+    "green": 0,
+    "yellow": 94,
+    "red": 50
+  },
+  "browser": {
+    "passed": 330,
+    "total": 330,
+    "scope": "Isolated Edge browser workflows and responsive widths; API responses mocked where stated"
+  },
+  "apiContract": {
+    "passed": 23,
+    "total": 23,
+    "scope": "Simulated database contract"
+  },
+  "liveBeforeRedeploy": {
+    "passed": 8,
+    "total": 8,
+    "scope": "Health, stats, anonymous-access denial, two TEST pending registrations and rejected sign-ins"
+  },
+  "liveAfterRedeploy": {
+    "passed": 6,
+    "total": 6,
+    "scope": "Health, stats, anonymous-access denial and both TEST records surviving API redeployment"
+  },
+  "publishedAssets": {
+    "passed": 7,
+    "total": 7,
+    "scope": "Current build, 41 screens, 144 variables/CSV rows, original storage key, no blanket evidence"
+  },
+  "limits": {
+    "twoAuthenticatedAccounts": "Blocked; TEST registrations are pending and no verification bypass was used",
+    "physicalDeviceAndIndependentNetwork": "Not executed; requires another real device and network",
+    "fullProductionEndToEnd": "Not complete",
+    "criticalHighDefectReview": "Not complete",
+    "otherBackendRecords": "Many remain device-local",
+    "strictFullyVerifiedPercent": 0
+  },
+  "recordedAt": "2026-10-02T01:04:13.544Z"
+}
