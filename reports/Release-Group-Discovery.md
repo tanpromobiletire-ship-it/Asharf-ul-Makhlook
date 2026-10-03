@@ -12,3 +12,5 @@ Not connected: cross-device group synchronization, backend membership/permission
 Status: 0 green, 112 yellow, 33 red. Strict production-verified completion remains 0%; all 12 conditions require exact-build per-variable evidence before GREEN.
 
 Deployment: Render static root, no build command; automatic deploy off. Regression: node tests/organized-navigation.mjs on Windows with Node and Edge. README includes source/deployment instructions. Live integrity and read-only health checks recorded separately.
+
+Live verification: All 23 live source-integrity and read-only smoke checks passed at 2026-10-03T15:04:21.580Z for source commit a42f209840e733094e529700cfc774a3cfb17d3b. Published HTML matches the tested source after newline normalization and the existing API/database health check passed. See Group-Discovery-Live-Results.json. These checks do not constitute full production acceptance or change status counts.
