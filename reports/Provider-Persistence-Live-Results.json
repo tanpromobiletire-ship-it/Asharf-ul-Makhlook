@@ -1,0 +1,200 @@
+{
+  "build": "V16-provider-persistence-2026-10-03af",
+  "commit": "a68f541af603bf130533b0e994c7d676aa08238d",
+  "at": "2026-10-03T22:55:30.642Z",
+  "type": "Live source-integrity and read-only smoke checks; not full production acceptance",
+  "passed": 43,
+  "total": 43,
+  "normalizedSHA256": "c0311dacee1f22543fbd4d72a3e6eb8f744b07019c909581846f896a6ab66ed6",
+  "results": [
+    {
+      "name": "Frontend HTTP200",
+      "pass": true
+    },
+    {
+      "name": "Published source matches tested source",
+      "pass": true
+    },
+    {
+      "name": "Current community build",
+      "pass": true
+    },
+    {
+      "name": "146 unique requirements",
+      "pass": true
+    },
+    {
+      "name": "0 green113yellow33red",
+      "pass": true
+    },
+    {
+      "name": "Mission and prototype limits",
+      "pass": true
+    },
+    {
+      "name": "Animal and plant categories",
+      "pass": true
+    },
+    {
+      "name": "No immunity guarantee",
+      "pass": true
+    },
+    {
+      "name": "Storage key preserved",
+      "pass": true
+    },
+    {
+      "name": "41 screens retained",
+      "pass": true
+    },
+    {
+      "name": "Published CSV includes all146",
+      "pass": true
+    },
+    {
+      "name": "Release report available",
+      "pass": true
+    },
+    {
+      "name": "Existing API/database connected",
+      "pass": true
+    },
+    {
+      "name": "Visitor/member starting buttons retained",
+      "pass": true
+    },
+    {
+      "name": "Request details and filters retained",
+      "pass": true
+    },
+    {
+      "name": "Community filters and counts published",
+      "pass": true
+    },
+    {
+      "name": "Member reaction guard published",
+      "pass": true
+    },
+    {
+      "name": "Toggle reaction and dislike published",
+      "pass": true
+    },
+    {
+      "name": "Owner status guard published",
+      "pass": true
+    },
+    {
+      "name": "Threaded reply forms published",
+      "pass": true
+    },
+    {
+      "name": "Selected cause navigation published",
+      "pass": true
+    },
+    {
+      "name": "Group discovery controls published",
+      "pass": true
+    },
+    {
+      "name": "Exact group navigation and tab guard published",
+      "pass": true
+    },
+    {
+      "name": "Updates tab and form published",
+      "pass": true
+    },
+    {
+      "name": "Task status and history published",
+      "pass": true
+    },
+    {
+      "name": "Membership review and own status published",
+      "pass": true
+    },
+    {
+      "name": "Cancellation and invite limitation published",
+      "pass": true
+    },
+    {
+      "name": "Message search and conversation filter published",
+      "pass": true
+    },
+    {
+      "name": "Reply and recipient preference published",
+      "pass": true
+    },
+    {
+      "name": "My Hub filters and search published",
+      "pass": true
+    },
+    {
+      "name": "Exact workspace and saved story controllers published",
+      "pass": true
+    },
+    {
+      "name": "Conversation tiles and Messages filter published",
+      "pass": true
+    },
+    {
+      "name": "Conversation selection and focus published",
+      "pass": true
+    },
+    {
+      "name": "My Hub Files filter and scoped references published",
+      "pass": true
+    },
+    {
+      "name": "Exact file-location focus published",
+      "pass": true
+    },
+    {
+      "name": "Owned request workspace and exact navigation published",
+      "pass": true
+    },
+    {
+      "name": "Google Microsoft Apple pending choices published",
+      "pass": true
+    },
+    {
+      "name": "Provider requirement recorded in progress",
+      "pass": true
+    },
+    {
+      "name": "Live provider identity-check API is disabled and membership unconnected",
+      "pass": true
+    },
+    {
+      "name": "Live PostgreSQL transaction store is ready",
+      "pass": true
+    },
+    {
+      "name": "Disabled provider start google",
+      "pass": true
+    },
+    {
+      "name": "Disabled provider start microsoft",
+      "pass": true
+    },
+    {
+      "name": "Disabled provider start apple",
+      "pass": true
+    }
+  ],
+  "deployments": {
+    "backend": {
+      "id": "dep-db0ofdpsrm7s738geik0",
+      "status": "live",
+      "commit": "a68f541af603bf130533b0e994c7d676aa08238d"
+    },
+    "frontend": {
+      "id": "dep-db0offdg1s2s73f085qg",
+      "status": "live",
+      "commit": "a68f541af603bf130533b0e994c7d676aa08238d"
+    }
+  },
+  "databaseVerification": {
+    "source": "Application server readiness probe: SELECT 1 FROM provider_flows LIMIT 0",
+    "directReadOnlyMCP": "Blocked by private database external IP allowlist; networking unchanged",
+    "limits": "No real OAuth transaction, production restart/replay or concurrent PostgreSQL consume test performed"
+  }
+}
