@@ -1,0 +1,11 @@
+{
+  "build": "V16-group-membership-2026-10-03y",
+  "recordedAt": "2026-10-03T18:41:09.685Z",
+  "type": "Isolated Edge regression summary; not production acceptance",
+  "passed": 569,
+  "total": 569,
+  "errors": [],
+  "failures": [],
+  "normalizedSHA256": "9d647f742ce28878a23cd0ce9c0c38d2959857a14e7256201486fc0cbdb4dc1c",
+  "scope": "539 prior checks plus 26 membership workflows and four queue layouts; local fixtures only"
+}
