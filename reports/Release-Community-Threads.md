@@ -12,3 +12,5 @@ Not connected: community backend synchronization, server-enforced permissions, a
 Status: 0 green, 112 yellow, 33 red. Strict production-verified completion remains 0%; all 12 conditions require per-variable exact-build evidence before GREEN.
 
 Deployment: existing Render static root, no build command; automatic deployment off. Run node tests/organized-navigation.mjs on Windows with Node and Edge. README includes deployment instructions. Live source integrity and read-only API health are recorded separately after publication.
+
+Live verification: All 21 live source-integrity and read-only smoke checks passed at 2026-10-03T14:50:03.627Z for source commit 40055593e456cedddfda81e59900044ab372a772. Published HTML matches the tested source after newline normalization, and the existing API/database health check passed. See Community-Threads-Live-Results.json. These checks do not constitute full production acceptance or change status counts.

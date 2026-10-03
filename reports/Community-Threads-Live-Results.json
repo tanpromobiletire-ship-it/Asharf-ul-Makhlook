@@ -1,0 +1,95 @@
+{
+  "build": "V16-community-threads-2026-10-03v",
+  "commit": "40055593e456cedddfda81e59900044ab372a772",
+  "at": "2026-10-03T14:50:03.627Z",
+  "type": "Live source-integrity and read-only smoke checks; not full production acceptance",
+  "passed": 21,
+  "total": 21,
+  "normalizedSHA256": "7a032a413fb96474889791240398ab81ca707535d46f4262d8439f44165f5ff9",
+  "results": [
+    {
+      "name": "Frontend HTTP200",
+      "pass": true
+    },
+    {
+      "name": "Published source matches tested source",
+      "pass": true
+    },
+    {
+      "name": "Current community build",
+      "pass": true
+    },
+    {
+      "name": "145 unique requirements",
+      "pass": true
+    },
+    {
+      "name": "0 green112yellow33red",
+      "pass": true
+    },
+    {
+      "name": "Mission and prototype limits",
+      "pass": true
+    },
+    {
+      "name": "Animal and plant categories",
+      "pass": true
+    },
+    {
+      "name": "No immunity guarantee",
+      "pass": true
+    },
+    {
+      "name": "Storage key preserved",
+      "pass": true
+    },
+    {
+      "name": "41 screens retained",
+      "pass": true
+    },
+    {
+      "name": "Published CSV includes all145",
+      "pass": true
+    },
+    {
+      "name": "Release report available",
+      "pass": true
+    },
+    {
+      "name": "Existing API/database connected",
+      "pass": true
+    },
+    {
+      "name": "Visitor/member starting buttons retained",
+      "pass": true
+    },
+    {
+      "name": "Request details and filters retained",
+      "pass": true
+    },
+    {
+      "name": "Community filters and counts published",
+      "pass": true
+    },
+    {
+      "name": "Member reaction guard published",
+      "pass": true
+    },
+    {
+      "name": "Toggle reaction and dislike published",
+      "pass": true
+    },
+    {
+      "name": "Owner status guard published",
+      "pass": true
+    },
+    {
+      "name": "Threaded reply forms published",
+      "pass": true
+    },
+    {
+      "name": "Selected cause navigation published",
+      "pass": true
+    }
+  ]
+}
