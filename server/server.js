@@ -2,11 +2,14 @@ const http=require('http');
 const crypto=require('crypto');
 const {Pool}=require('pg');
 const {createProviderAuth}=require('./provider-auth');
-const providerAuth=createProviderAuth();
+const {createPostgresFlowStore}=require('./provider-flow-store');
 
 const PORT=process.env.PORT||10000;
 const FRONTEND_ORIGIN=process.env.FRONTEND_ORIGIN||'https://asharf-ul-makhlook.onrender.com';
 const pool=process.env.DATABASE_URL?new Pool({connectionString:process.env.DATABASE_URL,ssl:{rejectUnauthorized:false}}):null;
+
+const flowStore=createPostgresFlowStore(pool);
+const providerAuth=createProviderAuth({flowStore});
 
 function json(res,status,data,extra={}){res.writeHead(status,{'content-type':'application/json; charset=utf-8','access-control-allow-origin':FRONTEND_ORIGIN,'access-control-allow-credentials':'true','access-control-allow-headers':'content-type,authorization','access-control-allow-methods':'GET,POST,OPTIONS',...extra});res.end(JSON.stringify(data))}
 function readBody(req){return new Promise((resolve,reject)=>{let s='';req.on('data',c=>{s+=c;if(s.length>1e6){req.destroy();reject(new Error('body too large'))}});req.on('end',()=>{try{resolve(s?JSON.parse(s):{})}catch(e){reject(e)}});req.on('error',reject)})}
@@ -45,6 +48,7 @@ async function init(){
   created_at timestamptz not null default now()
  )`);
  await pool.query('create index if not exists idx_visits_created_at on visits(created_at)');
+ await flowStore.init();
 }
 
 async function auth(req){

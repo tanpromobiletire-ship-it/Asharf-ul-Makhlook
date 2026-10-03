@@ -1,0 +1,21 @@
+{
+  "build": "V16-provider-persistence-2026-10-03af",
+  "recordedAt": "2026-10-03T22:53:03.168Z",
+  "providerComponent": {
+    "passed": 28,
+    "total": 28,
+    "scope": "22 simulated OIDC component tests and six simulated SQL-store tests; no real provider/JWT/JWKS or Postgres concurrency acceptance"
+  },
+  "apiContract": {
+    "passed": 26,
+    "total": 26,
+    "scope": "Isolated simulated database"
+  },
+  "hashes": {
+    "server/server.js": "fb5e4d2794cee480fcd8a618a717f2a3143c7f661b583fb9b01791b910b184dc",
+    "server/provider-auth.js": "dc3967cbd2303311a38bc2e836bb39343d8dd74f12e78fb4007db6e027340e2a",
+    "server/provider-flow-store.js": "25d9302610585d1dc71e6d7003936146a0c4539fbad7d706f58f1f05094446f1",
+    "server/package.json": "19cf99cb2f5090abd4269ac7c6229a9c29929ff0d0c1d75d43d6e570ea014e97",
+    "server/package-lock.json": "3b6273f5ca4939a94f97e910a93f98419c5be066ae2ec66828c8bb39b0a2b5cb"
+  }
+}

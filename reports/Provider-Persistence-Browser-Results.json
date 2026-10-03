@@ -1,0 +1,11 @@
+{
+  "build": "V16-provider-persistence-2026-10-03af",
+  "recordedAt": "2026-10-03T22:53:03.118Z",
+  "type": "Isolated Edge regression summary; not production acceptance",
+  "passed": 723,
+  "total": 723,
+  "errors": [],
+  "failures": [],
+  "normalizedSHA256": "c0311dacee1f22543fbd4d72a3e6eb8f744b07019c909581846f896a6ab66ed6",
+  "scope": "723 existing browser regression assertions; no UI workflows added in this release; fictional local/mocked accounts only"
+}

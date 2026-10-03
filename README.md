@@ -1,11 +1,11 @@
 # Asharf-ul-Makhlook V16
 
-Current build: V16-provider-engine-2026-10-03ae.
+Current build: V16-provider-persistence-2026-10-03af.
 
 ## Integrity
 
 `index.html` SHA-256:
-`100d13d01a4775b83c938ac692509dfba512ef94eb2cc4407b56d7032a2c68d4`
+`c0311dacee1f22543fbd4d72a3e6eb8f744b07019c909581846f896a6ab66ed6`
 
 Normalize CRLF to LF before hashing. The deployment copy must match this checksum before production verification begins.
 
@@ -108,3 +108,6 @@ Live verification: 15/15 read-only source/service smoke checks passed on 2026-10
 
 ## Current Provider Engine release
 723 browser checks passed. Current register: 146 requirements, 0 green, 113 yellow, 33 red. See reports/Release-Provider-Engine.md for current built/tested/not-connected scope. Earlier release receipts are historical evidence for their recorded builds.
+
+## Current Provider Engine release
+723 browser checks passed. Current register: 146 requirements, 0 green, 113 yellow, 33 red. See reports/Release-Provider-Persistence.md for current built/tested/not-connected scope. Earlier release receipts are historical evidence for their recorded builds.

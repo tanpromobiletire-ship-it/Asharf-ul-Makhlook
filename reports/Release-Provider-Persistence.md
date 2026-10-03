@@ -1,0 +1,14 @@
+# Provider transaction persistence release
+Build: V16-provider-persistence-2026-10-03af.
+
+Built: opt-in, server-side provider identity-check component for Google, Microsoft personal accounts (Hotmail/Outlook) and Apple. Includes pinned openid-client 6.8.8, authorization-code exchange, nonce/PKCE, signed-ID-token validation, secure browser-cookie binding, one-time state/expiry, cancellation, provider mix-up protection, bounded durable transactions, fixed HTTPS return origins and Apple form_post. Configuration-status API is public and discloses no secrets. Account page adds connection checking with loading, error/retry and validated status responses. User/session creation and membership activation are deliberately absent.
+
+Tested: 723/723 isolated headless Edge assertions, 22/22 simulated-provider component tests plus 6/6 simulated SQL-store adapter tests, and 26/26 API contract assertions with an isolated simulated database passed. No captured frontend errors or unexpected alerts. Dependency install audit reported zero vulnerabilities; this is not comprehensive security acceptance. Provider mocks do not prove real JWT/JWKS, credentials or production provider behavior.
+
+Preserved: 41 screens, all 146 requirement IDs, prior browser/database records, before-source backups and historical evidence. One additive provider_flows table/index was added; existing user identities, passwords and sessions are preserved. Frontend and backend deploys require separate manual Render deployments.
+
+Not connected: provider developer applications/credentials, real external provider tests, membership onboarding/linking, phone/email verification delivery, production provider sessions/revocation/recovery, durable identity mappings and cross-device provider membership. The identity-check flag stays off. Transactions now persist in PostgreSQL with 10-minute expiry, hashed browser/state bindings, a shared capacity lock and atomic single-use callback consumption. The six store tests simulate SQL interactions; real provider restart/replay behavior is still unverified. See Provider-Sign-In-Integration-Plan.md.
+
+Status: 0 green, 113 yellow, 33 red. VAR-146 remains YELLOW while integration work continues; it is not production verified. Strict production-verified completion remains 0%. All 12 per-variable gates require exact-build evidence before GREEN.
+
+Deployment: existing Render static root; backend uses cd server && npm install --omit=dev and cd server && npm start. No provider secrets or enable flags are set by this release. Database table initialization is additive and automatic at API startup. Commands: node tests/organized-navigation.mjs; node tests/api-contract.mjs; node --test server/provider-auth.test.js server/provider-flow-store.test.js. Live source-integrity/read-only probes and disabled provider-start checks are recorded separately.

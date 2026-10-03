@@ -1,6 +1,6 @@
 # Asharf-ul-Makhlook — complete requirements
 
-Build: V16-provider-engine-2026-10-03ae. **146 requirements; 0 green; 113 yellow; 33 red. Strict production-verified completion: 0%.**
+Build: V16-provider-persistence-2026-10-03af. **146 requirements; 0 green; 113 yellow; 33 red. Strict production-verified completion: 0%.**
 
 All 145 prior requirements are retained, including VAR-145 for the free-help mission. VAR-146 adds Google, Microsoft and Apple account sign-in.
 
