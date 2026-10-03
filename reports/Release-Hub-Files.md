@@ -12,3 +12,5 @@ Not connected: cloud attachment storage, scanning/quarantine, production file pe
 Status: 0 green, 112 yellow, 33 red. Strict production-verified completion remains 0%. All 12 gates require per-variable evidence for this exact build before GREEN.
 
 Deployment: existing Render static root, no build command; automatic deployment off. Regression: node tests/organized-navigation.mjs on Windows with Node and Edge. README retains deployment instructions. Live source-integrity/read-only smoke checks are separate from production acceptance.
+
+Live verification: 35/35 source-integrity/read-only smoke checks passed for source commit 33aafaee745d2d42c7bf59d0c5f50e747422e193. Published source matches browser-tested normalized SHA256 a008cbbcb0024107fb4165f4598cb7c12f3d07efd45e5f58e00c1c842f676030. Existing API/database health passes; all 41 screens and 145 requirement IDs remain. This is not full production workflow acceptance.
