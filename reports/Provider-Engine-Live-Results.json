@@ -1,0 +1,184 @@
+{
+  "build": "V16-provider-engine-2026-10-03ae",
+  "commit": "d299673e9cad78c4da5632e1188cd540e8e1f0f6",
+  "at": "2026-10-03T22:10:05.631Z",
+  "type": "Live source-integrity and read-only smoke checks; not full production acceptance",
+  "passed": 42,
+  "total": 42,
+  "normalizedSHA256": "100d13d01a4775b83c938ac692509dfba512ef94eb2cc4407b56d7032a2c68d4",
+  "results": [
+    {
+      "name": "Frontend HTTP200",
+      "pass": true
+    },
+    {
+      "name": "Published source matches tested source",
+      "pass": true
+    },
+    {
+      "name": "Current community build",
+      "pass": true
+    },
+    {
+      "name": "146 unique requirements",
+      "pass": true
+    },
+    {
+      "name": "0 green113yellow33red",
+      "pass": true
+    },
+    {
+      "name": "Mission and prototype limits",
+      "pass": true
+    },
+    {
+      "name": "Animal and plant categories",
+      "pass": true
+    },
+    {
+      "name": "No immunity guarantee",
+      "pass": true
+    },
+    {
+      "name": "Storage key preserved",
+      "pass": true
+    },
+    {
+      "name": "41 screens retained",
+      "pass": true
+    },
+    {
+      "name": "Published CSV includes all146",
+      "pass": true
+    },
+    {
+      "name": "Release report available",
+      "pass": true
+    },
+    {
+      "name": "Existing API/database connected",
+      "pass": true
+    },
+    {
+      "name": "Visitor/member starting buttons retained",
+      "pass": true
+    },
+    {
+      "name": "Request details and filters retained",
+      "pass": true
+    },
+    {
+      "name": "Community filters and counts published",
+      "pass": true
+    },
+    {
+      "name": "Member reaction guard published",
+      "pass": true
+    },
+    {
+      "name": "Toggle reaction and dislike published",
+      "pass": true
+    },
+    {
+      "name": "Owner status guard published",
+      "pass": true
+    },
+    {
+      "name": "Threaded reply forms published",
+      "pass": true
+    },
+    {
+      "name": "Selected cause navigation published",
+      "pass": true
+    },
+    {
+      "name": "Group discovery controls published",
+      "pass": true
+    },
+    {
+      "name": "Exact group navigation and tab guard published",
+      "pass": true
+    },
+    {
+      "name": "Updates tab and form published",
+      "pass": true
+    },
+    {
+      "name": "Task status and history published",
+      "pass": true
+    },
+    {
+      "name": "Membership review and own status published",
+      "pass": true
+    },
+    {
+      "name": "Cancellation and invite limitation published",
+      "pass": true
+    },
+    {
+      "name": "Message search and conversation filter published",
+      "pass": true
+    },
+    {
+      "name": "Reply and recipient preference published",
+      "pass": true
+    },
+    {
+      "name": "My Hub filters and search published",
+      "pass": true
+    },
+    {
+      "name": "Exact workspace and saved story controllers published",
+      "pass": true
+    },
+    {
+      "name": "Conversation tiles and Messages filter published",
+      "pass": true
+    },
+    {
+      "name": "Conversation selection and focus published",
+      "pass": true
+    },
+    {
+      "name": "My Hub Files filter and scoped references published",
+      "pass": true
+    },
+    {
+      "name": "Exact file-location focus published",
+      "pass": true
+    },
+    {
+      "name": "Owned request workspace and exact navigation published",
+      "pass": true
+    },
+    {
+      "name": "Google Microsoft Apple pending choices published",
+      "pass": true
+    },
+    {
+      "name": "Provider requirement recorded in progress",
+      "pass": true
+    },
+    {
+      "name": "Live provider identity-check API is disabled and membership unconnected",
+      "pass": true
+    },
+    {
+      "name": "Disabled provider start google",
+      "pass": true
+    },
+    {
+      "name": "Disabled provider start microsoft",
+      "pass": true
+    },
+    {
+      "name": "Disabled provider start apple",
+      "pass": true
+    }
+  ],
+  "deployments": {
+    "backend": "dep-db0npvk9v7es73c8ruj0",
+    "frontend": "dep-db0nq1tg1s2s73eth60g",
+    "sourceCommit": "d299673e9cad78c4da5632e1188cd540e8e1f0f6"
+  }
+}
