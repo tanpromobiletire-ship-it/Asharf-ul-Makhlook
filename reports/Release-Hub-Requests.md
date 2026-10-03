@@ -14,3 +14,5 @@ Not connected: Google/Microsoft/Apple live authentication, provider app credenti
 Status: 0 green, 112 yellow, 34 red. Strict production-verified completion remains 0%. VAR-146 remains RED until integration work begins; all 12 exact-build gates must pass before GREEN.
 
 Deployment: existing Render static root, no build command; automatic deployment off. Browser regression: node tests/organized-navigation.mjs with Node and Edge on Windows. README retains deployment instructions. Live source-integrity/read-only smoke checks are separate from full production acceptance.
+
+Live verification: 38/38 source-integrity/read-only smoke checks passed for source commit 41ed64a3639f51e2d34f37c7b6cfbcceea7033a9. Published source matches browser-tested normalized SHA256 ad53634488dfc9f43cfbccf17bacc7ffc00c0dc56bceaf45b4d47362ff1fe0ab. Existing API/database health passes. All 41 screens and 146 requirements are present. Provider authentication remains unconnected; this is not full production acceptance.

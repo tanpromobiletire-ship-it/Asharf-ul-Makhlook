@@ -1,0 +1,163 @@
+{
+  "build": "V16-hub-requests-2026-10-03ad",
+  "commit": "41ed64a3639f51e2d34f37c7b6cfbcceea7033a9",
+  "at": "2026-10-03T21:23:06.580Z",
+  "type": "Live source-integrity and read-only smoke checks; not full production acceptance",
+  "passed": 38,
+  "total": 38,
+  "normalizedSHA256": "ad53634488dfc9f43cfbccf17bacc7ffc00c0dc56bceaf45b4d47362ff1fe0ab",
+  "results": [
+    {
+      "name": "Frontend HTTP200",
+      "pass": true
+    },
+    {
+      "name": "Published source matches tested source",
+      "pass": true
+    },
+    {
+      "name": "Current community build",
+      "pass": true
+    },
+    {
+      "name": "146 unique requirements",
+      "pass": true
+    },
+    {
+      "name": "0 green112yellow34red",
+      "pass": true
+    },
+    {
+      "name": "Mission and prototype limits",
+      "pass": true
+    },
+    {
+      "name": "Animal and plant categories",
+      "pass": true
+    },
+    {
+      "name": "No immunity guarantee",
+      "pass": true
+    },
+    {
+      "name": "Storage key preserved",
+      "pass": true
+    },
+    {
+      "name": "41 screens retained",
+      "pass": true
+    },
+    {
+      "name": "Published CSV includes all146",
+      "pass": true
+    },
+    {
+      "name": "Release report available",
+      "pass": true
+    },
+    {
+      "name": "Existing API/database connected",
+      "pass": true
+    },
+    {
+      "name": "Visitor/member starting buttons retained",
+      "pass": true
+    },
+    {
+      "name": "Request details and filters retained",
+      "pass": true
+    },
+    {
+      "name": "Community filters and counts published",
+      "pass": true
+    },
+    {
+      "name": "Member reaction guard published",
+      "pass": true
+    },
+    {
+      "name": "Toggle reaction and dislike published",
+      "pass": true
+    },
+    {
+      "name": "Owner status guard published",
+      "pass": true
+    },
+    {
+      "name": "Threaded reply forms published",
+      "pass": true
+    },
+    {
+      "name": "Selected cause navigation published",
+      "pass": true
+    },
+    {
+      "name": "Group discovery controls published",
+      "pass": true
+    },
+    {
+      "name": "Exact group navigation and tab guard published",
+      "pass": true
+    },
+    {
+      "name": "Updates tab and form published",
+      "pass": true
+    },
+    {
+      "name": "Task status and history published",
+      "pass": true
+    },
+    {
+      "name": "Membership review and own status published",
+      "pass": true
+    },
+    {
+      "name": "Cancellation and invite limitation published",
+      "pass": true
+    },
+    {
+      "name": "Message search and conversation filter published",
+      "pass": true
+    },
+    {
+      "name": "Reply and recipient preference published",
+      "pass": true
+    },
+    {
+      "name": "My Hub filters and search published",
+      "pass": true
+    },
+    {
+      "name": "Exact workspace and saved story controllers published",
+      "pass": true
+    },
+    {
+      "name": "Conversation tiles and Messages filter published",
+      "pass": true
+    },
+    {
+      "name": "Conversation selection and focus published",
+      "pass": true
+    },
+    {
+      "name": "My Hub Files filter and scoped references published",
+      "pass": true
+    },
+    {
+      "name": "Exact file-location focus published",
+      "pass": true
+    },
+    {
+      "name": "Owned request workspace and exact navigation published",
+      "pass": true
+    },
+    {
+      "name": "Google Microsoft Apple pending choices published",
+      "pass": true
+    },
+    {
+      "name": "Provider requirement recorded red",
+      "pass": true
+    }
+  ]
+}
