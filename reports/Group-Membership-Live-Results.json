@@ -1,0 +1,119 @@
+{
+  "build": "V16-group-membership-2026-10-03y",
+  "commit": "cb10bc2f84551d46eceadebc440c6d406cda6d0c",
+  "at": "2026-10-03T18:42:41.154Z",
+  "type": "Live source-integrity and read-only smoke checks; not full production acceptance",
+  "passed": 27,
+  "total": 27,
+  "normalizedSHA256": "9d647f742ce28878a23cd0ce9c0c38d2959857a14e7256201486fc0cbdb4dc1c",
+  "results": [
+    {
+      "name": "Frontend HTTP200",
+      "pass": true
+    },
+    {
+      "name": "Published source matches tested source",
+      "pass": true
+    },
+    {
+      "name": "Current community build",
+      "pass": true
+    },
+    {
+      "name": "145 unique requirements",
+      "pass": true
+    },
+    {
+      "name": "0 green112yellow33red",
+      "pass": true
+    },
+    {
+      "name": "Mission and prototype limits",
+      "pass": true
+    },
+    {
+      "name": "Animal and plant categories",
+      "pass": true
+    },
+    {
+      "name": "No immunity guarantee",
+      "pass": true
+    },
+    {
+      "name": "Storage key preserved",
+      "pass": true
+    },
+    {
+      "name": "41 screens retained",
+      "pass": true
+    },
+    {
+      "name": "Published CSV includes all145",
+      "pass": true
+    },
+    {
+      "name": "Release report available",
+      "pass": true
+    },
+    {
+      "name": "Existing API/database connected",
+      "pass": true
+    },
+    {
+      "name": "Visitor/member starting buttons retained",
+      "pass": true
+    },
+    {
+      "name": "Request details and filters retained",
+      "pass": true
+    },
+    {
+      "name": "Community filters and counts published",
+      "pass": true
+    },
+    {
+      "name": "Member reaction guard published",
+      "pass": true
+    },
+    {
+      "name": "Toggle reaction and dislike published",
+      "pass": true
+    },
+    {
+      "name": "Owner status guard published",
+      "pass": true
+    },
+    {
+      "name": "Threaded reply forms published",
+      "pass": true
+    },
+    {
+      "name": "Selected cause navigation published",
+      "pass": true
+    },
+    {
+      "name": "Group discovery controls published",
+      "pass": true
+    },
+    {
+      "name": "Exact group navigation and tab guard published",
+      "pass": true
+    },
+    {
+      "name": "Updates tab and form published",
+      "pass": true
+    },
+    {
+      "name": "Task status and history published",
+      "pass": true
+    },
+    {
+      "name": "Membership review and own status published",
+      "pass": true
+    },
+    {
+      "name": "Cancellation and invite limitation published",
+      "pass": true
+    }
+  ]
+}
