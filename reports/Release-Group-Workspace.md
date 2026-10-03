@@ -12,3 +12,5 @@ Not connected: group backend synchronization, server-enforced ownership/membersh
 Status: 0 green, 112 yellow, 33 red. Strict production-verified completion remains 0%; every variable needs exact-build evidence for all 12 conditions before GREEN.
 
 Deployment: existing Render static root, no build command; automatic deployment off. Regression command: node tests/organized-navigation.mjs on Windows with Node and Edge. README includes deployment instructions. Live integrity and read-only health recorded separately.
+
+Live verification: All 25 live source-integrity and read-only smoke checks passed at 2026-10-03T15:18:01.258Z for source commit 408dffb9c8d50d1f886c14fec2bc8dcfe54327bd. Published HTML matches the tested source after newline normalization and the existing API/database health check passed. See Group-Workspace-Live-Results.json. These checks do not constitute full production acceptance or change status counts.
