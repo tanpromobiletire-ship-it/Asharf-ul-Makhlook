@@ -12,3 +12,5 @@ Not connected: real shared backend groups, questions, volunteer commitments and 
 Status: 0 green, 112 yellow, 33 red. Strict production-verified completion remains 0%. All 12 conditions require per-variable exact-build evidence before GREEN.
 
 Deployment: existing Render static root, no build command; automatic deployment off. Run node tests/organized-navigation.mjs with Node and Edge on Windows. README contains deployment instructions. Live source-integrity/read-only smoke evidence is recorded separately.
+
+Live verification: 31/31 source-integrity/read-only smoke checks passed for source commit 211819ee180a1fafc77838d9f2e39c85047aa883. Published HTML matches the browser-tested normalized SHA256 28f90f6fea9fd0cf50eaa3e99b1d7f89202a99fe1ba31752cb5f963b7640568b. Existing API/database health is connected. This evidence does not verify all production workflows.
