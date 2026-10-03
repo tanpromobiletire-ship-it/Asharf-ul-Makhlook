@@ -1,0 +1,11 @@
+{
+  "build": "V16-community-threads-2026-10-03v",
+  "recordedAt": "2026-10-03T14:47:34.449Z",
+  "type": "Isolated Edge regression summary; not production acceptance",
+  "passed": 485,
+  "total": 485,
+  "errors": [],
+  "failures": [],
+  "normalizedSHA256": "7a032a413fb96474889791240398ab81ca707535d46f4262d8439f44165f5ff9",
+  "scope": "468 prior checks plus 17 thread and selected-cause assertions; two local fixtures only"
+}
