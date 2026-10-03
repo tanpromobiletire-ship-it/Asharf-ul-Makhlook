@@ -12,3 +12,5 @@ Not connected: real cross-device messages, delivery/read receipts, unified backe
 Status: 0 green, 112 yellow, 33 red. Strict production-verified completion remains 0%; all 12 conditions require per-variable exact-build evidence before GREEN.
 
 Deployment: existing Render static root, no build command; automatic deployment off. Regression: node tests/organized-navigation.mjs on Windows with Node and Edge. README includes deployment instructions. Live source integrity/read-only health recorded separately.
+
+Live verification: All 29 live source-integrity and read-only smoke checks passed at 2026-10-03T18:58:33.162Z for source commit c6bd9e73f74147b0f9d0c186d4c2fdaac194044f. Published HTML matches the tested source after newline normalization; the existing API/database health check passed. See Message-Navigation-Live-Results.json. These scoped checks do not constitute full production acceptance or change status counts.
