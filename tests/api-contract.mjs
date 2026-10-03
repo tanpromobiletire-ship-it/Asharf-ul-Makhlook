@@ -1,15 +1,19 @@
 import fs from 'node:fs';
 import vm from 'node:vm';
+import {createRequire} from 'node:module';
+const providerFactory=createRequire(import.meta.url)('../server/provider-auth.js').createProviderAuth;
 import crypto from 'node:crypto';
 import {Readable} from 'node:stream';
 const source=fs.readFileSync(new URL('../server/server.js',import.meta.url),'utf8');
 const users=new Map(),sessions=new Map(),calls=[];let expired=false;
 const db={async query(sql,values=[]){calls.push({sql,values});const text=sql.trim();if(text==='select 1')return {rows:[{ok:1}]};if(text.startsWith('create '))return {rows:[]};if(text.startsWith('insert into users')){if(users.has(values[0])){const e=Error('duplicate');e.code='23505';throw e}const user={id:'TEST-'+users.size,email:values[0],phone:values[1],display_name:values[2],password_salt:values[3],password_hash:values[4],member_status:'pending_verification',phone_verified:false,email_verified:false};users.set(user.email,user);return {rows:[{id:user.id,email:user.email,phone:user.phone,display_name:user.display_name,member_status:user.member_status}]};}if(text.startsWith('select * from users'))return {rows:users.has(values[0])?[users.get(values[0])]:[]};if(text.startsWith('insert into sessions')){sessions.set(values[1],values[0]);return {rows:[]};}if(text.startsWith('delete from sessions')){sessions.delete(values[0]);return {rows:[]};}if(text.startsWith('select u.id')){const id=sessions.get(values[0]),user=[...users.values()].find(x=>x.id===id);return {rows:user&&!expired&&(!sql.includes("u.member_status='active'")||user.member_status==='active')?[{id:user.id,email:user.email,display_name:user.display_name,member_status:user.member_status}]:[]};}if(sql.includes('from users where'))return {rows:[{total:[...users.values()].filter(x=>x.member_status==='active').length,new_today:1,new_week:1}]};if(sql.includes('active_week from sessions'))return {rows:[{active_week:sessions.size}]};if(sql.includes('from visits'))return {rows:[{total:0,today:0,week:0}]};throw Error('Unmocked SQL '+text.slice(0,80));}};
-const context={require:name=>name==='http'?{}:name==='crypto'?crypto:name==='pg'?{Pool:class {constructor(){return db}}}:null,process:{env:{DATABASE_URL:'TEST-ONLY'},exit(){throw Error('Unexpected exit')}},Buffer,console:{error(){},log(){}}};
+const context={require:name=>name==='http'?{}:name==='crypto'?crypto:name==='pg'?{Pool:class {constructor(){return db}}}:name==='./provider-auth'?{createProviderAuth:()=>providerFactory({env:{}})}:null,process:{env:{DATABASE_URL:'TEST-ONLY'},exit(){throw Error('Unexpected exit')}},Buffer,console:{error(){},log(){}}};
 vm.createContext(context);vm.runInContext(source.slice(0,source.lastIndexOf('init().then'))+'\nglobalThis.contract={handler,init,hashPassword,tokenHash};',context);
 const api=context.contract,results=[];const check=(name,pass)=>results.push({name,pass:!!pass});
 async function request(path,method='GET',body,token){const req=Readable.from(body===undefined?[]:[typeof body==='string'?body:JSON.stringify(body)]);req.url=path;req.method=method;req.headers=token?{authorization:'Bearer '+token}:{};let status,payload;const res={writeHead(code){status=code},end(text){payload=JSON.parse(text)}};await api.handler(req,res);return {status,payload};}
 await api.init();check('Three tables initialized',calls.filter(x=>x.sql.startsWith('create table')).length===3);
+check('Provider status cannot activate membership',(await request('/api/auth/providers')).payload.membershipSignupConnected===false);
+check('Provider start remains disabled',(await request('/api/auth/provider/google/start')).status===503&&users.size===0&&sessions.size===0);
 check('Healthy database reported',(await request('/health')).payload.databaseConnected===true);
 check('Unauthenticated member stats rejected',(await request('/api/member/stats')).status===401);
 const pending={email:'pending@example.test',phone:'+15550100003',displayName:'TEST Pending',password:'PendingTestPassword-123'};

@@ -1,11 +1,11 @@
 # Asharf-ul-Makhlook V16
 
-Current build: V16-free-help-mission-2026-10-02s.
+Current build: V16-provider-engine-2026-10-03ae.
 
 ## Integrity
 
 `index.html` SHA-256:
-`ad53634488dfc9f43cfbccf17bacc7ffc00c0dc56bceaf45b4d47362ff1fe0ab`
+`100d13d01a4775b83c938ac692509dfba512ef94eb2cc4407b56d7032a2c68d4`
 
 Normalize CRLF to LF before hashing. The deployment copy must match this checksum before production verification begins.
 
@@ -29,7 +29,7 @@ The frontend is a static site: publish the repository root with no build command
 
 ## Validation
 
-The organized navigation passed 403 headless Edge checks across 41 screens and 320, 375, 768, and 1280 pixel widths. Live integrations and production verification remain subject to the policy above.
+Current build: 723 isolated Edge assertions, 19 simulated-provider component tests and 25 simulated-database API contract assertions passed. Full production acceptance remains pending.
 
 Run the navigation regression on Windows with Node and Microsoft Edge installed: node tests/organized-navigation.mjs. The test uses an isolated temporary browser profile and disables external requests.
 
@@ -105,3 +105,6 @@ Live verification: 15/15 read-only source/service smoke checks passed on 2026-10
 
 ## Current Hub Requests and Provider Options release
 715 browser checks passed. Current register: 146 requirements, 0 green, 112 yellow, 34 red. See reports/Release-Hub-Requests.md for current built/tested/not-connected scope. Earlier release receipts are historical evidence for their recorded builds.
+
+## Current Provider Engine release
+723 browser checks passed. Current register: 146 requirements, 0 green, 113 yellow, 33 red. See reports/Release-Provider-Engine.md for current built/tested/not-connected scope. Earlier release receipts are historical evidence for their recorded builds.

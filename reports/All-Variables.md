@@ -1,10 +1,10 @@
 # Asharf-ul-Makhlook — complete requirements
 
-Build: V16-hub-requests-2026-10-03ad. **146 requirements; 0 green; 112 yellow; 34 red. Strict production-verified completion: 0%.**
+Build: V16-provider-engine-2026-10-03ae. **146 requirements; 0 green; 113 yellow; 33 red. Strict production-verified completion: 0%.**
 
 All 145 prior requirements are retained, including VAR-145 for the free-help mission. VAR-146 adds Google, Microsoft and Apple account sign-in.
 
-715/715 browser assertions passed. Production integration, real end-to-end, two active verified accounts, physical device/network testing and full legal/configuration review remain incomplete. Historical live receipts identify their own earlier builds and do not automatically approve this one.
+723/723 browser assertions passed. Production integration, real end-to-end, two active verified accounts, physical device/network testing and full legal/configuration review remain incomplete. Historical live receipts identify their own earlier builds and do not automatically approve this one.
 
 ## Twelve required conditions
 
@@ -170,4 +170,4 @@ All 145 prior requirements are retained, including VAR-145 for the free-help mis
 | VAR-143 | WhatsApp profile / sharing | 🟡 Yellow | Social profiles | [sharing](https://asharf-ul-makhlook.onrender.com/#sharing) | Local sharing/profile configuration exists. No provider account authentication is implied. | Test this profile/link on the current build; connect provider authorization only if required. |
 | VAR-144 | Complete variable register & omission audit | 🟡 Yellow | Project control | [variableAudit](https://asharf-ul-makhlook.onrender.com/#variableAudit) | Unified register, detailed gaps, screen coverage and 12-condition results are being added. | Execute current-build register, export, status, route and coverage checks; retain evidence. |
 | VAR-145 | Free-help mission: humans, animals, plants and all living things | 🟡 Yellow | Mission & care | [purpose](https://asharf-ul-makhlook.onrender.com/#purpose) | Mission and plain-language safety notice; clickable next-step tiles; local animal/plant test request categories. | Verify real operations, care partners, permissions and all 12 production conditions. |
-| VAR-146 | Google, Microsoft and Apple account sign-in | 🔴 Red | Account & identity | [cloudAccount](https://asharf-ul-makhlook.onrender.com/#cloudAccount) | Provider chooser and account-service navigation are built as a clearly labeled connection preview. No provider authenticates accounts or bypasses phone verification. | Register provider apps, implement and configure server-side OIDC, link identities safely, complete phone verification, and test real provider signup/sign-in, recovery, two accounts and devices. |
+| VAR-146 | Google, Microsoft and Apple account sign-in | 🟡 Yellow | Account & identity | [cloudAccount](https://asharf-ul-makhlook.onrender.com/#cloudAccount) | Server identity-check component implemented with openid-client 6.8.8, browser-bound state, nonce/PKCE, signed-token checks and fail-closed configuration. Nineteen simulated-provider boundary tests pass. Public membership signup remains disconnected; no user/session is created. | Configure approved provider apps and credentials; finish durable identity mapping/onboarding, mandatory phone verification, recovery, abuse controls and real provider end-to-end/two-account/device tests. |

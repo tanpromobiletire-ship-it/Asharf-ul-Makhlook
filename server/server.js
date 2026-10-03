@@ -1,6 +1,8 @@
 const http=require('http');
 const crypto=require('crypto');
 const {Pool}=require('pg');
+const {createProviderAuth}=require('./provider-auth');
+const providerAuth=createProviderAuth();
 
 const PORT=process.env.PORT||10000;
 const FRONTEND_ORIGIN=process.env.FRONTEND_ORIGIN||'https://asharf-ul-makhlook.onrender.com';
@@ -59,6 +61,7 @@ async function auth(req){
 async function handler(req,res){
  if(req.method==='OPTIONS')return json(res,204,{});
  try{
+  if(await providerAuth.handle(req,res,json))return;
   if(req.url==='/health'&&req.method==='GET'){
    let db=false;if(pool){try{await pool.query('select 1');db=true}catch{}}
    return json(res,200,{ok:true,service:'asharf-ul-makhlook-api',databaseConnected:db});

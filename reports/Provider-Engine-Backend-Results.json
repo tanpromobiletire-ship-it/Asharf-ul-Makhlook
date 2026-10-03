@@ -1,0 +1,20 @@
+{
+  "build": "V16-provider-engine-2026-10-03ae",
+  "recordedAt": "2026-10-03T22:07:50.969Z",
+  "providerComponent": {
+    "passed": 19,
+    "total": 19,
+    "scope": "Simulated OIDC; no real provider or JWT/JWKS acceptance"
+  },
+  "apiContract": {
+    "passed": 25,
+    "total": 25,
+    "scope": "Isolated simulated database"
+  },
+  "hashes": {
+    "server/server.js": "1b728925aa1e72e879e7a02b501579ab88708079b9877436fedc18e8d0354436",
+    "server/provider-auth.js": "888f60cd25d340a0f39174a0611215cf7e8147a9dfebbe70395fc6c2c83abc2e",
+    "server/package.json": "19cf99cb2f5090abd4269ac7c6229a9c29929ff0d0c1d75d43d6e570ea014e97",
+    "server/package-lock.json": "3b6273f5ca4939a94f97e910a93f98419c5be066ae2ec66828c8bb39b0a2b5cb"
+  }
+}

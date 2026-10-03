@@ -1,0 +1,11 @@
+{
+  "build": "V16-provider-engine-2026-10-03ae",
+  "recordedAt": "2026-10-03T22:07:50.968Z",
+  "type": "Isolated Edge regression summary; not production acceptance",
+  "passed": 723,
+  "total": 723,
+  "errors": [],
+  "failures": [],
+  "normalizedSHA256": "100d13d01a4775b83c938ac692509dfba512ef94eb2cc4407b56d7032a2c68d4",
+  "scope": "715 prior assertions plus eight provider status boundary checks; fictional local/mocked accounts only"
+}
