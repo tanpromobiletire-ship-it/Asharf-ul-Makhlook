@@ -1,0 +1,11 @@
+{
+  "build": "V16-hub-requests-2026-10-03ad",
+  "recordedAt": "2026-10-03T21:21:14.282Z",
+  "type": "Isolated Edge regression summary; not production acceptance",
+  "passed": 715,
+  "total": 715,
+  "errors": [],
+  "failures": [],
+  "normalizedSHA256": "ad53634488dfc9f43cfbccf17bacc7ffc00c0dc56bceaf45b4d47362ff1fe0ab",
+  "scope": "668 prior assertions, updated registry expectations, request/provider chooser workflows and four account-service layouts; fictional local/mocked accounts only"
+}
