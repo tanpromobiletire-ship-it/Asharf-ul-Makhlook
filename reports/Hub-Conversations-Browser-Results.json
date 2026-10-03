@@ -1,0 +1,11 @@
+{
+  "build": "V16-hub-conversations-2026-10-03ab",
+  "recordedAt": "2026-10-03T20:39:03.289Z",
+  "type": "Isolated Edge regression summary; not production acceptance",
+  "passed": 641,
+  "total": 641,
+  "errors": [],
+  "failures": [],
+  "normalizedSHA256": "983225040153fb409063e4277eea1bbb801c7a8a5db1336b07ea2b9e9e0260c4",
+  "scope": "614 prior checks plus 27 Hub conversation workflows; browser-local fictional fixtures only"
+}

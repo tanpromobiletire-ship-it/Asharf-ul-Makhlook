@@ -1,10 +1,10 @@
 # Asharf-ul-Makhlook — complete requirements
 
-Build: V16-my-hub-2026-10-03aa. **145 requirements; 0 green; 112 yellow; 33 red. Strict production-verified completion: 0%.**
+Build: V16-hub-conversations-2026-10-03ab. **145 requirements; 0 green; 112 yellow; 33 red. Strict production-verified completion: 0%.**
 
 All 144 prior requirements are retained. VAR-145 adds the user-requested free-help mission for humans, animals, plants and all living things.
 
-614/614 browser assertions passed. Production integration, real end-to-end, two active verified accounts, physical device/network testing and full legal/configuration review remain incomplete. Historical live receipts identify their own earlier builds and do not automatically approve this one.
+641/641 browser assertions passed. Production integration, real end-to-end, two active verified accounts, physical device/network testing and full legal/configuration review remain incomplete. Historical live receipts identify their own earlier builds and do not automatically approve this one.
 
 ## Twelve required conditions
 
