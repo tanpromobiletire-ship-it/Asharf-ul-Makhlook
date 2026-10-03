@@ -1,0 +1,11 @@
+{
+  "build": "V16-group-discovery-2026-10-03w",
+  "recordedAt": "2026-10-03T15:02:44.652Z",
+  "type": "Isolated Edge regression summary; not production acceptance",
+  "passed": 507,
+  "total": 507,
+  "errors": [],
+  "failures": [],
+  "normalizedSHA256": "6ef8b5071cf73d17ebd7b29244bfe68d98396466da259f9b56c4d70531851279",
+  "scope": "485 prior checks plus 18 group workflow and four group layout checks; local fixtures only"
+}
