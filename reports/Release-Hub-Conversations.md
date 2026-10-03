@@ -12,3 +12,5 @@ Not connected: production real-time/cross-device messaging, real authenticated a
 Status: 0 green, 112 yellow, 33 red. Strict production-verified completion remains 0%. All 12 gates must have exact-build per-variable evidence before GREEN.
 
 Deployment: existing Render static root; automatic deployment off. Node/Edge regression command: node tests/organized-navigation.mjs. README retains source/deployment instructions. Live source-integrity/read-only smoke evidence is separate from full production acceptance.
+
+Live verification: 33/33 source-integrity/read-only smoke checks passed for source commit 90afebd05651aa1ee96f8200239a307407fa7a9e. Published source matches tested SHA256 983225040153fb409063e4277eea1bbb801c7a8a5db1336b07ea2b9e9e0260c4. Existing API/database health passes. This is not full production workflow acceptance.
