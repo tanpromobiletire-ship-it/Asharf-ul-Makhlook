@@ -1,0 +1,11 @@
+{
+  "build": "V16-group-workspace-2026-10-03x",
+  "recordedAt": "2026-10-03T15:16:30.609Z",
+  "type": "Isolated Edge regression summary; not production acceptance",
+  "passed": 539,
+  "total": 539,
+  "errors": [],
+  "failures": [],
+  "normalizedSHA256": "20efc77b9b12ea5c28ecde531680ff575f8a21905688610d27b61a532991750b",
+  "scope": "507 prior checks plus Updates tab, 23 announcement/task checks, eight panel layouts; local fixtures only"
+}
