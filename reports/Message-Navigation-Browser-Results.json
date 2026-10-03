@@ -1,0 +1,11 @@
+{
+  "build": "V16-message-navigation-2026-10-03z",
+  "recordedAt": "2026-10-03T18:56:55.960Z",
+  "type": "Isolated Edge regression summary; not production acceptance",
+  "passed": 589,
+  "total": 589,
+  "errors": [],
+  "failures": [],
+  "normalizedSHA256": "aac8554e0f8d7c3942b853d3d6e49bfd254edc076333a4fb95a8d5e56d639d31",
+  "scope": "569 prior checks plus 16 message workflows and four message layouts; local fixtures only"
+}
