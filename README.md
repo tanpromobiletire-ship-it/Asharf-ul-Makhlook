@@ -5,7 +5,7 @@ Current build: V16-free-help-mission-2026-10-02s.
 ## Integrity
 
 `index.html` SHA-256:
-`983225040153fb409063e4277eea1bbb801c7a8a5db1336b07ea2b9e9e0260c4`
+`a008cbbcb0024107fb4165f4598cb7c12f3d07efd45e5f58e00c1c842f676030`
 
 Normalize CRLF to LF before hashing. The deployment copy must match this checksum before production verification begins.
 
@@ -99,3 +99,6 @@ Live verification: 15/15 read-only source/service smoke checks passed on 2026-10
 
 ## Current Hub Conversations release
 641 browser checks passed. Current register: 145 requirements, 0 green, 112 yellow, 33 red. See reports/Release-Hub-Conversations.md for current built/tested/not-connected scope. Earlier release receipts are historical evidence for their recorded builds.
+
+## Current Hub Files release
+668 browser checks passed. Current register: 145 requirements, 0 green, 112 yellow, 33 red. See reports/Release-Hub-Files.md for current built/tested/not-connected scope. Earlier release receipts are historical evidence for their recorded builds.

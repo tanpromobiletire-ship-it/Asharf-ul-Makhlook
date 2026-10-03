@@ -1,0 +1,11 @@
+{
+  "build": "V16-hub-files-2026-10-03ac",
+  "recordedAt": "2026-10-03T20:57:50.968Z",
+  "type": "Isolated Edge regression summary; not production acceptance",
+  "passed": 668,
+  "total": 668,
+  "errors": [],
+  "failures": [],
+  "normalizedSHA256": "a008cbbcb0024107fb4165f4598cb7c12f3d07efd45e5f58e00c1c842f676030",
+  "scope": "641 prior checks plus 27 Hub file metadata/navigation workflows; browser-local fictional fixtures only"
+}
