@@ -37,5 +37,8 @@
     "red": 46
   },
   "scope": "Scoped automated checks; not full 12-gate production acceptance",
-  "deployed": false
+  "deployed": true,
+  "applicationCommit": "74a11da8b9cf5410f463fd00c70254cd21597cf3",
+  "liveEvidence": "Conversion-Diagnostics-Live.json",
+  "externalConversionAvailable": false
 }

@@ -1,0 +1,77 @@
+{
+  "build": "V16-conversion-diagnostics-2026-10-04ao",
+  "commit": "74a11da8b9cf5410f463fd00c70254cd21597cf3",
+  "checkedAt": "2026-10-04T23:49:09.112Z",
+  "checks": [
+    {
+      "name": "Website HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "Published source equals tested source",
+      "passed": true
+    },
+    {
+      "name": "Correct build",
+      "passed": true
+    },
+    {
+      "name": "API health",
+      "passed": true
+    },
+    {
+      "name": "/api/public/stats",
+      "passed": true
+    },
+    {
+      "name": "/api/member/stats",
+      "passed": true
+    },
+    {
+      "name": "/api/me",
+      "passed": true
+    },
+    {
+      "name": "/reports/Release-Conversion-Diagnostics.md",
+      "passed": true
+    },
+    {
+      "name": "/reports/All-Variables.csv",
+      "passed": true
+    },
+    {
+      "name": "171 variable rows",
+      "passed": true
+    },
+    {
+      "name": "Structured conversion response",
+      "passed": true
+    },
+    {
+      "name": "Safe typed diagnostic",
+      "passed": true
+    },
+    {
+      "name": "Retry interval bounded",
+      "passed": true
+    },
+    {
+      "name": "No unsafe diagnostic fields",
+      "passed": true
+    },
+    {
+      "name": "Fail closed",
+      "passed": true
+    }
+  ],
+  "passed": 15,
+  "total": 15,
+  "conversionAvailable": false,
+  "conversionHTTP": 503,
+  "diagnostic": {
+    "code": "rate_limited",
+    "upstreamStatus": 429,
+    "endpoint": "exchange_rates",
+    "retryAfterSeconds": 17
+  }
+}

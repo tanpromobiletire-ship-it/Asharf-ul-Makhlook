@@ -34,3 +34,6 @@ Public website: https://asharf-ul-makhlook.onrender.com/#advertising
 Deployment state: reports/Publication-Latest.md
 
 Real payments, merchant settlement, wallet signing, blockchain broadcasting/confirmations, ad delivery, refunds and external marketing remain unconnected. Existing account verification delivery gaps remain. No funds or advertisements were sent.
+
+
+Published verification: both services live at application commit 74a11da8b9cf5410f463fd00c70254cd21597cf3. Public source exactly matches tested hash. 15/15 scoped delivery/authentication/safe-failure checks pass; conversion availability remains unavailable due to verified upstream HTTP 429. See Publication-Latest.md and Conversion-Diagnostics-Live.json.
