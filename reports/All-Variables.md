@@ -1,10 +1,10 @@
 # Asharf-ul-Makhlook — complete requirements
 
-Build: V16-advertiser-workflows-2026-10-04an. **171 requirements; 0 green; 125 yellow; 46 red. Strict production-verified completion: 0%.**
+Build: V16-conversion-diagnostics-2026-10-04ao. **171 requirements; 0 green; 125 yellow; 46 red. Strict production-verified completion: 0%.**
 
 All 146 prior requirement IDs and screens are retained. VAR-147–171 track every advertising, payment, wallet, conversion and marketing component.
 
-990/990 browser assertions passed. Backend source unchanged; prior 43/43 API and 45/45 Node checks remain separately recorded evidence. These are scoped local tests; the full 12 production conditions remain pending.
+1014/1014 Chrome browser assertions, 47/47 API checks and 58/58 Node tests passed. All 12 production gates remain pending. These are scoped local tests; the full 12 production conditions remain pending.
 
 ## Twelve required conditions
 
@@ -12,7 +12,7 @@ All 146 prior requirement IDs and screens are retained. VAR-147–171 track ever
 2. Integrated — Partial: production integrations pending
 3. Tests passed — Partial: scoped tests only
 4. Browser/device — Partial: desktop and responsive widths only
-5. Deployed — Partial: current source live; per-variable production acceptance pending
+5. Deployed — Partial: source candidate tested; current-build per-variable production acceptance pending
 6. Production configuration — Partial: feature-specific configuration pending
 7. Real end-to-end — Blocked: real full workflow pending
 8. Two authenticated accounts — Blocked: verified account delivery missing
@@ -182,7 +182,7 @@ All 146 prior requirement IDs and screens are retained. VAR-147–171 track ever
 | VAR-155 | Advertising checkout and demo receipts | 🟡 Yellow | Advertising & growth | advertising | Owner-only checkout records fictional receipts with itemized quote and fee details; duplicate payments and account/revision races are guarded. No money moves. | Implement real checkout, verified payment webhooks, reconciliation and production receipt permissions. |
 | VAR-156 | Advertising fiat payment processing | 🔴 Red | Advertising & growth | advertising | No real USD/CAD/MXN processor configured. | Select and configure merchant account, supported countries, cards/payment methods and verified webhooks. |
 | VAR-157 | Advertising crypto payment processing | 🔴 Red | Advertising & growth | advertising | No real BTC/ETH/USDT wallets or payment service configured; no addresses or private keys collected. | Choose custody/provider model; verify network, quote expiry, confirmations, fees and settlement. |
-| VAR-158 | Advertising weekly pricing and conversion quotes | 🟡 Yellow | Advertising & growth | advertising | US$1/week. USD/CAD/USDT surcharge 0%; MXN/BTC/ETH 3%. CoinGecko-only conversions have source, retrieval, expiry and precise rounding. | Verify authoritative server-issued price locks, rate licensing, fees/taxes and actual merchant payment acceptance. |
+| VAR-158 | Advertising weekly pricing and conversion quotes | 🟡 Yellow | Advertising & growth | advertising | US$1/week, correct surcharge exemptions and CoinGecko-only exact conversion. Safe failure reasons, bounded retry guidance and private owner setup instructions are added; real payment connection remains pending. | Verify authoritative server-issued price locks, rate licensing, fees/taxes and actual merchant payment acceptance. |
 | VAR-159 | Advertising Sponsored delivery and inventory | 🔴 Red | Advertising & growth | advertising | Escaped Sponsored previews only; no live ad placement. | Implement authorized scheduling, inventory, start/pause/end controls and delivery eligibility after verified payment. |
 | VAR-160 | Advertising refunds disputes and reconciliation | 🔴 Red | Advertising & growth | advertising | Demo receipts are retained; no real refunds or disputes processed. | Implement cancellation policy, refunds, chargebacks, crypto refund policy and ledger reconciliation. |
 | VAR-161 | Advertising fraud and content moderation | 🔴 Red | Advertising & growth | advertising | Input validation and local review simulation only. | Implement website/content review, restricted categories, fraud screening, abuse reporting and appeal handling. |

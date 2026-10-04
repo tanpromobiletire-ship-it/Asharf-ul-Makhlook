@@ -2,8 +2,8 @@ const http=require('http');
 const crypto=require('crypto');
 const {Pool}=require('pg');
 const {createProviderAuth}=require('./provider-auth');
-const {createAdvertisingRates}=require('./advertising-rates');
-const advertisingRates=createAdvertisingRates({apiKey:process.env.COINGECKO_DEMO_API_KEY||''});
+const {createAdvertisingRates,publicRateFailure}=require('./advertising-rates');
+const advertisingRates=createAdvertisingRates({apiKey:process.env.COINGECKO_DEMO_API_KEY||'',onFailure:diagnostic=>console.warn('CoinGecko reference feed unavailable '+JSON.stringify(diagnostic))});
 const {createPostgresFlowStore}=require('./provider-flow-store');
 
 const PORT=process.env.PORT||10000;
@@ -77,7 +77,7 @@ async function handler(req,res){
   if(req.url==='/api/advertising/rates'){
    if(req.method!=='GET')return json(res,405,{error:'method_not_allowed'},{'cache-control':'no-store'});
    try{return json(res,200,await advertisingRates.get(),{'cache-control':'no-store'})}
-   catch{return json(res,503,{error:'rate_source_unavailable',source:'CoinGecko',paymentConnected:false},{'cache-control':'no-store'})}
+   catch(error){const diagnostic=publicRateFailure(error);return json(res,503,{error:'rate_source_unavailable',source:'CoinGecko',paymentConnected:false,diagnostic},{'cache-control':'no-store','retry-after':String(diagnostic.retryAfterSeconds)})}
   }
   if(req.url==='/health'&&req.method==='GET'){
    let db=false;if(pool){try{await pool.query('select 1');db=true}catch{}}

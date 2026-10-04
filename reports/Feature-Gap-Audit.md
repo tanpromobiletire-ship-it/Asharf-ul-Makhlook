@@ -1,5 +1,5 @@
 # Feature gap audit — Asharf-ul-Makhlook
-Build: V16-advertiser-workflows-2026-10-04an
+Build: V16-conversion-diagnostics-2026-10-04ao
 Publication: source live; conversion-feed retrieval unavailable and production acceptance incomplete.
 Coverage: 42 screens and all 171 registered requirement IDs retained. No requirement was removed from the register.
 
@@ -216,3 +216,6 @@ Current comparison evidence: reports/Release-Conversation-Tiles.md. This build p
 
 ## Advertiser workflow follow-up
 Campaign copies create unsaved fresh drafts; wallet label/history/restore controls preserve network and receipt identity; receipts have full quote details. GitHub authentication/repository permissions checked read-only. No push or real payment occurred.
+
+## Conversion diagnostics
+Safe failure categories, Retry-After, capped exponential backoff, customer guidance, owner setup links and secret-exclusion tests are implemented. 1014 browser, 47 API and 58 Node tests passed. These do not prove the external feed has recovered; read current publication evidence.

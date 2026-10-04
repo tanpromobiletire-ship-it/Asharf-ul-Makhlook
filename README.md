@@ -1,11 +1,11 @@
 # Asharf-ul-Makhlook V16
 
-Current build: V16-advertiser-workflows-2026-10-04an.
+Current build: V16-conversion-diagnostics-2026-10-04ao.
 
 ## Integrity
 
 `index.html` SHA-256:
-`9ad3ed560f265878eac6e970494fed47ca0800333eb24e0710e1f5c4926873c9`
+`dfb95a1aa905250476e0742b0701dac3f9eca35a0769bd412e46ccd1a4164089`
 
 Normalize CRLF to LF before hashing. The deployment copy must match this checksum before production verification begins.
 
@@ -139,3 +139,6 @@ See reports/Release-Advertiser-Workflows.md for before/after and current tests. 
 
 ## Live publication — October 4, 2026
 Current application source is live and matches the tested hash. Both services deployed from the correct main repository. Live checks passed 17/19; CoinGecko retrieval remains unavailable from Render after retry, so non-USD quotes fail closed. Real payments remain unconnected. See reports/Publication-Latest.md and reports/Publication-Live-Results.json.
+
+## Conversion diagnostics release
+See reports/Release-Conversion-Diagnostics.md and reports/Conversion-Diagnostics-Results.json. The backend exposes only safe diagnostic enums and bounded retry guidance. The client blocks repeated checks during cooldown, never automatically polls, and keeps non-USD checkout paused without fresh rates. Provider keys belong only in backend environment settings. Read Publication-Latest.md for current deployment/feed state.
