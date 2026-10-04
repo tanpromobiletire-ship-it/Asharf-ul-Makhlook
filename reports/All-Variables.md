@@ -12,7 +12,7 @@ All 146 prior requirement IDs and screens are retained. VAR-147–171 track ever
 2. Integrated — Partial: production integrations pending
 3. Tests passed — Partial: scoped tests only
 4. Browser/device — Partial: desktop and responsive widths only
-5. Deployed — Blocked: current build not deployed
+5. Deployed — Partial: current source live; per-variable production acceptance pending
 6. Production configuration — Partial: feature-specific configuration pending
 7. Real end-to-end — Blocked: real full workflow pending
 8. Two authenticated accounts — Blocked: verified account delivery missing

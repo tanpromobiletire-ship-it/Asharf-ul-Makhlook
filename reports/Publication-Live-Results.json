@@ -1,0 +1,137 @@
+{
+  "build": "V16-advertiser-workflows-2026-10-04an",
+  "checkedAt": "2026-10-04T19:10:43.215Z",
+  "applicationCommit": "50a69757037ca5be14ce5789589574691c64ffe5",
+  "normalizedSHA256": "9ad3ed560f265878eac6e970494fed47ca0800333eb24e0710e1f5c4926873c9",
+  "frontendDeployId": "dep-db1a84favr4c73b034p0",
+  "backendDeployId": "dep-db1a82u0tbcc73a8m7gg",
+  "passed": 17,
+  "total": 19,
+  "failures": [
+    {
+      "name": "Conversion endpoint available",
+      "pass": false,
+      "detail": "{\"status\":503,\"source\":\"CoinGecko\"}"
+    },
+    {
+      "name": "Single fresh conversion provider",
+      "pass": false,
+      "detail": ""
+    }
+  ],
+  "results": [
+    {
+      "name": "Frontend HTTP",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published exact tested source",
+      "pass": true,
+      "detail": "9ad3ed560f265878eac6e970494fed47ca0800333eb24e0710e1f5c4926873c9"
+    },
+    {
+      "name": "Current build",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "All 42 screens retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "All 171 requirement IDs retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Status remains honest",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Advertising shell",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Backend health",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Database connected",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Public statistics service",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Anonymous member stats rejected",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Anonymous account details rejected",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Conversion endpoint available",
+      "pass": false,
+      "detail": "{\"status\":503,\"source\":\"CoinGecko\"}"
+    },
+    {
+      "name": "Single fresh conversion provider",
+      "pass": false,
+      "detail": ""
+    },
+    {
+      "name": "Conversion CORS for intended frontend",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Conversion method restriction",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Conversion preflight",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published full CSV",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published before-after report",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "scope": "Read-only live HTTP and deployment smoke checks, not full 12-gate production acceptance",
+  "realPayments": false,
+  "rateRecheck": {
+    "status": 503,
+    "source": "CoinGecko",
+    "error": "rate_source_unavailable",
+    "recordedAt": "2026-10-04T19:14:53.431Z"
+  },
+  "deploymentStatus": {
+    "frontend": "live",
+    "backend": "live",
+    "applicationCommit": "50a69757037ca5be14ce5789589574691c64ffe5"
+  },
+  "apiErrorLogCheck": {
+    "recordedAt": "2026-10-04T19:14:53.432Z",
+    "startTime": "2026-10-04T19:07:55Z",
+    "errorsReturned": 0
+  }
+}

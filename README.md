@@ -29,7 +29,7 @@ The frontend is a static site: publish the repository root with no build command
 
 ## Validation
 
-Current build tests: 969 isolated Edge assertions, 43 API contract checks and 45 provider/store/rate tests passed. This build is local and not deployed.
+Current build tests: 969 isolated Edge assertions, 43 API contract checks and 45 provider/store/rate tests passed. The current application build is published; see reports/Publication-Latest.md for live checks and conversion-feed limitations.
 
 Run the navigation regression on Windows with Node and Microsoft Edge installed: node tests/organized-navigation.mjs. The test uses an isolated temporary browser profile and disables external requests.
 
@@ -136,3 +136,6 @@ Run node --test server/advertising-rates.test.js server/provider-auth.test.js se
 
 ## Advertiser workflow follow-up
 See reports/Release-Advertiser-Workflows.md for before/after and current tests. Campaign-copy, wallet label/history/restore and detailed receipts are local prototypes. GitHub connection verified, current changes unpushed, production unchanged.
+
+## Live publication — October 4, 2026
+Current application source is live and matches the tested hash. Both services deployed from the correct main repository. Live checks passed 17/19; CoinGecko retrieval remains unavailable from Render after retry, so non-USD quotes fail closed. Real payments remain unconnected. See reports/Publication-Latest.md and reports/Publication-Live-Results.json.

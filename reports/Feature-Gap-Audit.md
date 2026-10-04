@@ -1,6 +1,6 @@
 # Feature gap audit — Asharf-ul-Makhlook
 Build: V16-advertiser-workflows-2026-10-04an
-Publication: local working build; not deployed.
+Publication: source live; conversion-feed retrieval unavailable and production acceptance incomplete.
 Coverage: 42 screens and all 171 registered requirement IDs retained. No requirement was removed from the register.
 
 ## Message improvements completed in this local build
