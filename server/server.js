@@ -2,6 +2,8 @@ const http=require('http');
 const crypto=require('crypto');
 const {Pool}=require('pg');
 const {createProviderAuth}=require('./provider-auth');
+const {createAdvertisingRates}=require('./advertising-rates');
+const advertisingRates=createAdvertisingRates({apiKey:process.env.COINGECKO_DEMO_API_KEY||''});
 const {createPostgresFlowStore}=require('./provider-flow-store');
 
 const PORT=process.env.PORT||10000;
@@ -48,6 +50,12 @@ async function init(){
   created_at timestamptz not null default now()
  )`);
  await pool.query('create index if not exists idx_visits_created_at on visits(created_at)');
+ await pool.query(`alter table users
+  add column if not exists country text,
+  add column if not exists participation_role text,
+  add column if not exists rules_version text,
+  add column if not exists rules_accepted_at timestamptz
+ `);
  await flowStore.init();
 }
 
@@ -58,7 +66,7 @@ async function auth(req){
  const t=h.slice(7);
  const r=await pool.query(`select u.id,u.email,u.phone,u.display_name,u.member_status,u.email_verified,u.phone_verified
  from sessions s join users u on u.id=s.user_id
- where s.token_hash=$1 and s.expires_at>now() and u.member_status='active'`,[tokenHash(t)]);
+ where s.token_hash=$1 and s.expires_at>now() and u.member_status='active' and u.email_verified=true and u.phone_verified=true`,[tokenHash(t)]);
  return r.rows[0]||null;
 }
 
@@ -66,6 +74,11 @@ async function handler(req,res){
  if(req.method==='OPTIONS')return json(res,204,{});
  try{
   if(await providerAuth.handle(req,res,json))return;
+  if(req.url==='/api/advertising/rates'){
+   if(req.method!=='GET')return json(res,405,{error:'method_not_allowed'},{'cache-control':'no-store'});
+   try{return json(res,200,await advertisingRates.get(),{'cache-control':'no-store'})}
+   catch{return json(res,503,{error:'rate_source_unavailable',source:'CoinGecko',paymentConnected:false},{'cache-control':'no-store'})}
+  }
   if(req.url==='/health'&&req.method==='GET'){
    let db=false;if(pool){try{await pool.query('select 1');db=true}catch{}}
    return json(res,200,{ok:true,service:'asharf-ul-makhlook-api',databaseConnected:db});
@@ -88,8 +101,8 @@ async function handler(req,res){
     pool.query(`select count(*)::int total,
       count(*) filter(where created_at>=current_date)::int new_today,
       count(*) filter(where created_at>=now()-interval '7 days')::int new_week
-      from users where member_status='active'`),
-    pool.query(`select count(distinct user_id)::int active_week from sessions where created_at>=now()-interval '7 days'`)
+      from users where member_status='active' and email_verified=true and phone_verified=true`),
+    pool.query(`select count(distinct s.user_id)::int active_week from sessions s join users u on u.id=s.user_id where s.created_at>=now()-interval '7 days' and s.expires_at>now() and u.member_status='active' and u.email_verified=true and u.phone_verified=true`)
    ]);
    return json(res,200,{members:{...m.rows[0],activeWeek:a.rows[0].active_week}});
   }
@@ -107,12 +120,14 @@ async function handler(req,res){
    if(!pool)return json(res,503,{error:'database_not_connected'});
    const b=await readBody(req),email=normEmail(b.email),phone=cleanPhone(b.phone),name=String(b.displayName||'').trim().slice(0,80),password=String(b.password||'');
    if(!/^\S+@\S+\.\S+$/.test(email)||email.length>160||!/^\+?[0-9]{8,15}$/.test(phone)||!name||password.length<10||password.length>128)return json(res,400,{error:'valid_email_phone_name_and_10_char_password_required'});
+   const country=typeof b.country==='string'?b.country.trim():'',participationRole=b.participationRole;
+   if(country.length<2||country.length>80||/[\u0000-\u001f\u007f]/.test(country)||!['Need Help','Help Provider','Both'].includes(participationRole)||b.rulesAccepted!==true||b.testConsent!==true||b.rulesVersion!=='prototype-community-2026-10-04')return json(res,400,{error:'country_role_and_current_rules_consent_required'});
    const hp=hashPassword(password);
    try{
-    const r=await pool.query(`insert into users(email,phone,display_name,password_salt,password_hash)
-      values($1,$2,$3,$4,$5)
-      returning id,email,phone,display_name,member_status,email_verified,phone_verified,created_at`,
-      [email,phone,name,hp.salt,hp.hash]);
+    const r=await pool.query(`insert into users(email,phone,display_name,password_salt,password_hash,country,participation_role,rules_version,rules_accepted_at)
+      values($1,$2,$3,$4,$5,$6,$7,$8,now())
+      returning id,email,phone,display_name,member_status,email_verified,phone_verified,created_at,country,participation_role,rules_version,rules_accepted_at`,
+      [email,phone,name,hp.salt,hp.hash,country,participationRole,b.rulesVersion]);
     return json(res,201,{user:r.rows[0],verificationRequired:true,smsConnected:false,emailVerificationConnected:false});
    }catch(e){if(e.code==='23505')return json(res,409,{error:'account_already_exists'});throw e}
   }
@@ -125,7 +140,7 @@ async function handler(req,res){
    if(!u)return json(res,401,{error:'invalid_credentials'});
    const hp=hashPassword(password,u.password_salt);
    if(typeof u.password_hash!=='string'||u.password_hash.length!==hp.hash.length||!crypto.timingSafeEqual(Buffer.from(hp.hash),Buffer.from(u.password_hash)))return json(res,401,{error:'invalid_credentials'});
-   if(u.member_status!=='active')return json(res,403,{error:'verification_required',phoneVerified:u.phone_verified,emailVerified:u.email_verified});
+   if(u.member_status!=='active'||u.email_verified!==true||u.phone_verified!==true)return json(res,403,{error:'verification_required',phoneVerified:u.phone_verified,emailVerified:u.email_verified});
    const t=token();
    await pool.query(`insert into sessions(user_id,token_hash,expires_at) values($1,$2,now()+interval '30 days')`,[u.id,tokenHash(t)]);
    return json(res,200,{token:t,user:{id:u.id,email:u.email,phone:u.phone,displayName:u.display_name}});

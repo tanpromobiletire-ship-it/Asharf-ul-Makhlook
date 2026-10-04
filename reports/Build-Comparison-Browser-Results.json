@@ -1,0 +1,10 @@
+{
+  "build": "V16-build-comparison-2026-10-04ak",
+  "recordedAt": "2026-10-04T14:08:12.539Z",
+  "passed": 827,
+  "total": 827,
+  "errors": [],
+  "failures": [],
+  "normalizedSHA256": "1daf9a67bcc05195b1e977ab3101dc81153308f8a7901b3cb7738ff5e720ffb0",
+  "scope": "Isolated Edge browser regression; seven added comparison/navigation checks. Not production acceptance."
+}

@@ -1,0 +1,29 @@
+{
+  "build": "V16-advertiser-demo-2026-10-04am",
+  "recordedAt": "2026-10-04T17:14:41.525Z",
+  "apiContract": {
+    "passed": 43,
+    "total": 43,
+    "mockedDatabase": true
+  },
+  "nodeTests": {
+    "passed": 45,
+    "total": 45,
+    "newRateTests": 17
+  },
+  "liveLocalPreview": {
+    "sourceMatched": true,
+    "ratesStatus": 200,
+    "source": "CoinGecko",
+    "backendSourceBlocked": true,
+    "envFileBlocked": true
+  },
+  "sourceHashes": {
+    "server/server.js": "49c6b454e256360354920bf3dd26fec3c9370400d585166694f759d26c622b1b",
+    "server/advertising-rates.js": "ca32f99a1494f247feb1e9431ff7b2f797300ca777052a5e18bfa43e38111306",
+    "server/advertising-rates.test.js": "8ee33dc994b1085dde80383ac56d404e9a584ca94a880234d8c536d3c8adb2b5",
+    "tests/api-contract.mjs": "42486a3ac934b4e3742a4e6b55d0d28476c0228ae98dc3d7c4faedb03ae02480"
+  },
+  "deployed": false,
+  "realPayments": false
+}

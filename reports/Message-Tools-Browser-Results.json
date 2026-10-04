@@ -1,0 +1,11 @@
+{
+  "build": "V16-message-tools-2026-10-04ah",
+  "recordedAt": "2026-10-04T03:36:56.021Z",
+  "type": "Isolated Edge regression summary; not production acceptance",
+  "passed": 760,
+  "total": 760,
+  "errors": [],
+  "failures": [],
+  "normalizedSHA256": "50244b7d6deebc8a6c1b147a4d71de075515aca9f1e52e7e3782bb397a2a33cf",
+  "scope": "All prior browser workflows plus onboarding validation/transport/reset, prototype rules dialog and responsive layout; fictional local/mocked accounts only"
+}

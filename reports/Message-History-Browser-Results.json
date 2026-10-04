@@ -1,0 +1,11 @@
+{
+  "build": "V16-message-history-2026-10-04aj",
+  "recordedAt": "2026-10-04T12:28:59.641Z",
+  "type": "Isolated Edge regression summary; not production acceptance",
+  "passed": 820,
+  "total": 820,
+  "errors": [],
+  "failures": [],
+  "normalizedSHA256": "f42fbad06f6f08670d5e997fed92f4a2e89f593ba97ea8513301c27c13a72e99",
+  "scope": "All prior workflows plus 37 sender edit/removal/history and responsive-modal checks; fictional local/mocked accounts only"
+}

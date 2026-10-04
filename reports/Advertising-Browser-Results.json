@@ -1,0 +1,22 @@
+{
+  "build": "V16-advertiser-demo-2026-10-04am",
+  "recordedAt": "2026-10-04T17:14:41.523Z",
+  "passed": 969,
+  "total": 969,
+  "failures": [],
+  "errors": [],
+  "normalizedSHA256": "4bd35426b9b3b4b1e4abf71819387aad2974662b772558892c0113d249406693",
+  "testSourceSHA256": "92446502c2023d1e056890440f6041d0edd30a5f7320659cdd3c4343d8355a63",
+  "previousBuild": "V16-conversation-tiles-2026-10-04al",
+  "previousAssertions": 854,
+  "additionalAssertions": 115,
+  "scope": "Isolated Edge browser regression; fictional accounts; no payments or ad delivery",
+  "screens": 42,
+  "requirements": 171,
+  "status": {
+    "green": 0,
+    "yellow": 125,
+    "red": 46
+  },
+  "deployed": false
+}

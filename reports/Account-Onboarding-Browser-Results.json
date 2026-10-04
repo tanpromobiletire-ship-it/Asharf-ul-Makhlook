@@ -1,0 +1,11 @@
+{
+  "build": "V16-account-onboarding-2026-10-04ag",
+  "recordedAt": "2026-10-04T03:19:34.383Z",
+  "type": "Isolated Edge regression summary; not production acceptance",
+  "passed": 735,
+  "total": 735,
+  "errors": [],
+  "failures": [],
+  "normalizedSHA256": "f3973e2f74117a1f98265afb7afaa96a19a814320c09ac1360cb5855faae6ff2",
+  "scope": "All prior browser workflows plus onboarding validation/transport/reset, prototype rules dialog and responsive layout; fictional local/mocked accounts only"
+}

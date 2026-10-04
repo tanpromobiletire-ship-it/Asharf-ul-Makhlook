@@ -1,0 +1,11 @@
+{
+  "build": "V16-message-replies-2026-10-04ai",
+  "recordedAt": "2026-10-04T04:10:58.527Z",
+  "type": "Isolated Edge regression summary; not production acceptance",
+  "passed": 783,
+  "total": 783,
+  "errors": [],
+  "failures": [],
+  "normalizedSHA256": "87dbb05bc81fa58a4c45f80c8eef833132332000eb41c6efb4947a07fe7a8587",
+  "scope": "All prior workflows plus 23 quoted-reply, access, persistence and asynchronous storage boundary checks; fictional local/mocked accounts only"
+}

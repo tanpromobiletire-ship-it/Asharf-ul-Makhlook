@@ -1,0 +1,21 @@
+{
+  "build": "V16-conversation-tiles-2026-10-04al",
+  "recordedAt": "2026-10-04T16:09:57.284Z",
+  "passed": 854,
+  "total": 854,
+  "failures": [],
+  "errors": [],
+  "normalizedSHA256": "a50aaa74c7f82f6d200785fd5830e2d30f681e887f2646293ea2bee51fcbf6f3",
+  "previousBuild": "V16-build-comparison-2026-10-04ak",
+  "previousAssertions": 827,
+  "additionalAssertions": 27,
+  "scope": "Isolated Edge browser regression and fictional local accounts; not production verification Public/local publication labels updated; full suite rerun.",
+  "screens": 41,
+  "requirements": 146,
+  "status": {
+    "green": 0,
+    "yellow": 113,
+    "red": 33
+  },
+  "deployed": false
+}

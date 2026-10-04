@@ -1,0 +1,32 @@
+{
+  "build": "V16-advertiser-workflows-2026-10-04an",
+  "recordedAt": "2026-10-04T17:45:41.431Z",
+  "passed": 990,
+  "total": 990,
+  "errors": [],
+  "failures": [],
+  "normalizedSHA256": "9ad3ed560f265878eac6e970494fed47ca0800333eb24e0710e1f5c4926873c9",
+  "testSourceSHA256": "b9ca9dee0d218e0e2db35e1f76ce71f25cdf70ab84a6c8d62990b2241db7d361",
+  "previousBuild": "V16-advertiser-demo-2026-10-04am",
+  "previousAssertions": 969,
+  "additionalAssertions": 21,
+  "browser": "chrome.exe",
+  "scope": "Isolated fictional local accounts; not production acceptance",
+  "screens": 42,
+  "requirements": 171,
+  "status": {
+    "green": 0,
+    "yellow": 125,
+    "red": 46
+  },
+  "deployed": false,
+  "backend": "Unchanged source; previous 43 API and 45 provider/store/rate checks are historical evidence",
+  "unsuccessfulHarnessAttempts": [
+    {
+      "browser": "msedge.exe",
+      "attempts": 2,
+      "outcome": "Timed out without results; not recorded as passes"
+    }
+  ],
+  "browserCompatibility": "Current full regression verified in Chrome; this build did not complete Edge verification"
+}

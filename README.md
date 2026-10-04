@@ -1,11 +1,11 @@
 # Asharf-ul-Makhlook V16
 
-Current build: V16-provider-persistence-2026-10-03af.
+Current build: V16-advertiser-workflows-2026-10-04an.
 
 ## Integrity
 
 `index.html` SHA-256:
-`c0311dacee1f22543fbd4d72a3e6eb8f744b07019c909581846f896a6ab66ed6`
+`9ad3ed560f265878eac6e970494fed47ca0800333eb24e0710e1f5c4926873c9`
 
 Normalize CRLF to LF before hashing. The deployment copy must match this checksum before production verification begins.
 
@@ -21,7 +21,7 @@ Material changes invalidate prior GREEN status until affected regression and pro
 
 ## Navigation update
 
-41 screens; six home task tiles; grouped searchable directory; breadcrumbs; compact mobile menu. Existing demo records remain in browser local storage. Demo roles are not production authentication.
+42 screens; six home task tiles; grouped searchable directory; breadcrumbs; compact mobile menu. Existing demo records remain in browser local storage. Demo roles are not production authentication.
 
 ## Deployment
 
@@ -29,7 +29,7 @@ The frontend is a static site: publish the repository root with no build command
 
 ## Validation
 
-Current build: 723 isolated Edge assertions, 19 simulated-provider component tests and 25 simulated-database API contract assertions passed. Full production acceptance remains pending.
+Current build tests: 969 isolated Edge assertions, 43 API contract checks and 45 provider/store/rate tests passed. This build is local and not deployed.
 
 Run the navigation regression on Windows with Node and Microsoft Edge installed: node tests/organized-navigation.mjs. The test uses an isolated temporary browser profile and disables external requests.
 
@@ -61,7 +61,7 @@ The current free database expires October 31, 2026. Arrange retention and backup
 
 ## Full variable audit
 
-All variables & 12 checks contains 144 variables: the previous 65 roadmap rows and 79 individually tracked requirements, metrics, social profiles and the register itself. Baseline 0 green, 111 yellow, 33 red. reports/All-Variables.md and reports/All-Variables.csv provide the full list and remaining gaps. All 41 screens are in the directory. No previously tracked row was removed.
+All variables & 12 checks contains 171 variables. All prior IDs remain; status 0 green, 125 yellow, 46 red. reports/All-Variables.md and reports/All-Variables.csv provide the full list and remaining gaps. All 42 screens are in the directory. No previously tracked row was removed.
 
 A lab/closure/hosting check no longer automatically grants every variable production tests/browser/deployed conditions. Only explicit current-build per-variable approvals do. Generic historical acceptance notes do not certify this build.
 
@@ -111,3 +111,28 @@ Live verification: 15/15 read-only source/service smoke checks passed on 2026-10
 
 ## Current Provider Engine release
 723 browser checks passed. Current register: 146 requirements, 0 green, 113 yellow, 33 red. See reports/Release-Provider-Persistence.md for current built/tested/not-connected scope. Earlier release receipts are historical evidence for their recorded builds.
+
+## Current Account Onboarding release
+735 browser checks passed. Current register: 146 requirements, 0 green, 113 yellow, 33 red. See reports/Release-Account-Onboarding.md for current built/tested/not-connected scope. Earlier release receipts are historical evidence for their recorded builds.
+
+## Current Account Onboarding release
+760 browser checks passed. Current register: 146 requirements, 0 green, 113 yellow, 33 red. See reports/Release-Message-Tools.md for current built/tested/not-connected scope. Earlier release receipts are historical evidence for their recorded builds.
+
+## Current Account Onboarding release
+783 browser checks passed. Current register: 146 requirements, 0 green, 113 yellow, 33 red. See reports/Release-Message-Replies.md for current built/tested/not-connected scope. Earlier release receipts are historical evidence for their recorded builds.
+
+## Current Account Onboarding release
+820 browser checks passed. Current register: 146 requirements, 0 green, 113 yellow, 33 red. See reports/Release-Message-History.md for current built/tested/not-connected scope. Earlier release receipts are historical evidence for their recorded builds.
+
+Current comparison evidence: reports/Release-Conversation-Tiles.md. This build passed 854 isolated browser assertions; backend evidence is unchanged historical regression evidence. Publication pending.
+
+Latest publication and live evidence: reports/Publication-Latest.md. Publishing has been authorized; delivery state is recorded there.
+
+## Current Advertising release
+
+See reports/Release-Advertising.md for before/after, pricing and exact scope. US$1/week; USD/CAD/USDT have no conversion surcharge; MXN/BTC/ETH have 3%. CoinGecko is the sole conversion source; non-USD quotes expire after five minutes. Real payments, wallets, blockchain broadcasts and ad delivery are not connected. Optional COINGECKO_DEMO_API_KEY is server-side only.
+
+Run node --test server/advertising-rates.test.js server/provider-auth.test.js server/provider-flow-store.test.js and node tests/api-contract.mjs. Browser records use isolated test storage.
+
+## Advertiser workflow follow-up
+See reports/Release-Advertiser-Workflows.md for before/after and current tests. Campaign-copy, wallet label/history/restore and detailed receipts are local prototypes. GitHub connection verified, current changes unpushed, production unchanged.
