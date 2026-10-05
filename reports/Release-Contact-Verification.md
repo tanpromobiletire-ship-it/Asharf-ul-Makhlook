@@ -17,5 +17,3 @@ Source SHA-256 (LF normalized): 4b962e4465d8f54e8c8c76f5ca04138b0cba453ce1c48826
 Evidence: Contact-Verification-Results.json
 Private setup: Verification-Provider-Setup.md
 Current publication and live evidence: Publication-Latest.md
-
-Publication is awaiting the tested GitHub commit and live deployment verification.

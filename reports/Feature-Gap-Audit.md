@@ -222,3 +222,5 @@ Safe failure categories, Retry-After, capped exponential backoff, customer guida
 
 
 Account/display audit build ap: fixed hidden reply display, missing profile fields, empty-recipient guidance, local unblock UI and message ID collisions. Added 10 fictional personas and current roadmap snapshot. Full production integration gaps remain; see Release-Account-Display-Audit.md.
+
+Current build verification update: see Release-Contact-Verification.md. Passing isolated tests does not change the 12 production gates.

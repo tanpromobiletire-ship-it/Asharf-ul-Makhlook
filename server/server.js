@@ -5,6 +5,9 @@ const {createProviderAuth}=require('./provider-auth');
 const {createAdvertisingRates,publicRateFailure}=require('./advertising-rates');
 const advertisingRates=createAdvertisingRates({apiKey:process.env.COINGECKO_DEMO_API_KEY||'',onFailure:diagnostic=>console.warn('CoinGecko reference feed unavailable '+JSON.stringify(diagnostic))});
 const {createPostgresFlowStore}=require('./provider-flow-store');
+const {createContactProvider}=require('./contact-provider');
+const {createContactStore}=require('./contact-store');
+const {createContactVerification}=require('./contact-verification');
 
 const PORT=process.env.PORT||10000;
 const FRONTEND_ORIGIN=process.env.FRONTEND_ORIGIN||'https://asharf-ul-makhlook.onrender.com';
@@ -12,6 +15,9 @@ const pool=process.env.DATABASE_URL?new Pool({connectionString:process.env.DATAB
 
 const flowStore=createPostgresFlowStore(pool);
 const providerAuth=createProviderAuth({flowStore});
+const contactProvider=createContactProvider();
+const contactStore=createContactStore(pool);
+const contactVerification=createContactVerification({provider:contactProvider,store:contactStore,authenticate:authenticateForVerification,frontendOrigin:FRONTEND_ORIGIN});
 
 function json(res,status,data,extra={}){res.writeHead(status,{'content-type':'application/json; charset=utf-8','access-control-allow-origin':FRONTEND_ORIGIN,'access-control-allow-credentials':'true','access-control-allow-headers':'content-type,authorization','access-control-allow-methods':'GET,POST,OPTIONS',...extra});res.end(JSON.stringify(data))}
 function readBody(req){return new Promise((resolve,reject)=>{let s='';req.on('data',c=>{s+=c;if(s.length>1e6){req.destroy();reject(new Error('body too large'))}});req.on('end',()=>{try{resolve(s?JSON.parse(s):{})}catch(e){reject(e)}});req.on('error',reject)})}
@@ -57,6 +63,16 @@ async function init(){
   add column if not exists rules_accepted_at timestamptz
  `);
  await flowStore.init();
+ await contactStore.init();
+}
+
+async function authenticateForVerification(email,password){
+ if(!pool)return null;
+ const r=await pool.query('select * from users where email=$1',[email]),u=r.rows[0];
+ if(!u)return null;
+ const hp=hashPassword(password,u.password_salt);
+ if(typeof u.password_hash!=='string'||u.password_hash.length!==hp.hash.length||!crypto.timingSafeEqual(Buffer.from(hp.hash),Buffer.from(u.password_hash)))return null;
+ return u;
 }
 
 async function auth(req){
@@ -73,6 +89,7 @@ async function auth(req){
 async function handler(req,res){
  if(req.method==='OPTIONS')return json(res,204,{});
  try{
+  if(await contactVerification.handle(req,res,json))return;
   if(await providerAuth.handle(req,res,json))return;
   if(req.url==='/api/advertising/rates'){
    if(req.method!=='GET')return json(res,405,{error:'method_not_allowed'},{'cache-control':'no-store'});
@@ -128,7 +145,7 @@ async function handler(req,res){
       values($1,$2,$3,$4,$5,$6,$7,$8,now())
       returning id,email,phone,display_name,member_status,email_verified,phone_verified,created_at,country,participation_role,rules_version,rules_accepted_at`,
       [email,phone,name,hp.salt,hp.hash,country,participationRole,b.rulesVersion]);
-    return json(res,201,{user:r.rows[0],verificationRequired:true,smsConnected:false,emailVerificationConnected:false});
+    return json(res,201,{user:r.rows[0],verificationRequired:true,smsConnected:contactStore.ready()&&contactProvider.readiness().channels.sms,emailVerificationConnected:contactStore.ready()&&contactProvider.readiness().channels.email});
    }catch(e){if(e.code==='23505')return json(res,409,{error:'account_already_exists'});throw e}
   }
 

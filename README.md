@@ -1,11 +1,11 @@
 # Asharf-ul-Makhlook V16
 
-Current build: V16-account-display-audit-2026-10-04ap.
+Current build: V16-contact-verification-2026-10-04aq.
 
 ## Integrity
 
 `index.html` SHA-256:
-`dfb95a1aa905250476e0742b0701dac3f9eca35a0769bd412e46ccd1a4164089`
+`4b962e4465d8f54e8c8c76f5ca04138b0cba453ce1c48826f1a4b4e39e647843`
 
 Normalize CRLF to LF before hashing. The deployment copy must match this checksum before production verification begins.
 
@@ -29,7 +29,7 @@ The frontend is a static site: publish the repository root with no build command
 
 ## Validation
 
-Current build tests: 969 isolated Edge assertions, 43 API contract checks and 45 provider/store/rate tests passed. The current application build is published; see reports/Publication-Latest.md for live checks and conversion-feed limitations.
+Current build tests: 1,192 isolated Chrome assertions, 189 model/structure checks, 53 isolated API checks and 132 server tests passed. See reports/Release-Contact-Verification.md and reports/Publication-Latest.md. Real provider delivery remains pending.
 
 Run the navigation regression on Windows with Node and Microsoft Edge installed: node tests/organized-navigation.mjs. The test uses an isolated temporary browser profile and disables external requests.
 
@@ -145,3 +145,6 @@ See reports/Release-Conversion-Diagnostics.md and reports/Conversion-Diagnostics
 
 
 Current account/display release: 1159 Chrome checks, 189 model/structure checks, 47 API checks and 58 Node tests passed. All 171 IDs remain, with 0 green / 125 yellow / 46 red. Production completion 0%; partial implementation coverage 73%. See Release-Account-Display-Audit.md and Publication-Latest.md for current publication scope.
+
+## Contact verification
+Built provider-backed endpoints and on-page code submission; delivery remains disabled until privately configured. Follow reports/Verification-Provider-Setup.md. No real accounts or deliveries are claimed by isolated tests.

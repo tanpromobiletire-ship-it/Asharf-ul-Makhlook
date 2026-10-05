@@ -1,0 +1,116 @@
+{
+  "build": "V16-contact-verification-2026-10-04aq",
+  "createdAt": "2026-10-05T01:02:23.244Z",
+  "htmlSha256": "4b962e4465d8f54e8c8c76f5ca04138b0cba453ce1c48826f1a4b4e39e647843",
+  "files": {
+    "index.html": "4b962e4465d8f54e8c8c76f5ca04138b0cba453ce1c48826f1a4b4e39e647843",
+    "server/server.js": "81d26d6cfb18899af669a279a4d42029961f76e3f2b8d7164d1e8062aee4426b",
+    "server/contact-provider.js": "c7e31d5f34c6fe5aa40e9233a4bce4acd543c7989c00628f36ee2571a7f7e5ff",
+    "server/contact-verification.test.js": "d903a811faf856b4418f5cc9f7e4a817479250604582ec58d19ebb4cbabacbf8",
+    "server/contact-verification.js": "ffebdf230f1c1cf99e2021d6c0c935d2a60d33f0072b1ab3440c1528e2d44a84",
+    "server/contact-provider.test.js": "59a5b8c9860d64b739226c6a125b41a73cb28998980447c572d41bb5ad3e12b6",
+    "server/contact-store.test.js": "aa5caf9376baa3436f4438872685ad6245d1b050fe9ccc78267e7d6e699c98bf",
+    "server/contact-store.js": "5a2300bac9a9a54a22cb348cb0b5efe182b984e58ae00bebfcf853f441910241",
+    "tests/api-contract.mjs": "684ecfe18e6ee65cc0461fd5a0e7772fbf89e5c29483bb95c73f91f4ebd74e25",
+    "tests/organized-navigation.mjs": "3eb02f909e13587c9ed48107725b41a10344c705004d0d2ecb63c65a34bd6323"
+  },
+  "browser": {
+    "browser": "chrome.exe",
+    "passed": 1192,
+    "total": 1192,
+    "invalidRoutePreserved": true,
+    "errors": [],
+    "lastResults": [
+      {
+        "name": "Layout 1280 purpose",
+        "pass": true,
+        "detail": "actual 1265"
+      },
+      {
+        "name": "Layout 1280 worldHelp",
+        "pass": true,
+        "detail": "actual 1265"
+      },
+      {
+        "name": "Layout 1280 groupsHub",
+        "pass": true,
+        "detail": "actual 1265"
+      },
+      {
+        "name": "Layout 1280 messages",
+        "pass": true,
+        "detail": "actual 1265"
+      },
+      {
+        "name": "Layout 1280 dashboard",
+        "pass": true,
+        "detail": "actual 1280"
+      },
+      {
+        "name": "Layout 1280 cloudAccount",
+        "pass": true,
+        "detail": "actual 1265"
+      },
+      {
+        "name": "Group workspace panel layout 1280 tasks",
+        "pass": true,
+        "detail": "actual 1265"
+      },
+      {
+        "name": "Group workspace panel layout 1280 updates",
+        "pass": true,
+        "detail": "actual 1265"
+      },
+      {
+        "name": "Request dialog layout 1280",
+        "pass": true,
+        "detail": "width 560"
+      },
+      {
+        "name": "Community rules dialog layout 1280",
+        "pass": true,
+        "detail": "width 560"
+      },
+      {
+        "name": "Message edit dialog layout 1280",
+        "pass": true,
+        "detail": "width 560"
+      },
+      {
+        "name": "Message remove dialog layout 1280",
+        "pass": true,
+        "detail": "width 560"
+      }
+    ],
+    "failures": []
+  },
+  "api": {
+    "type": "API contract with isolated simulated database",
+    "passed": 53,
+    "total": 53,
+    "failures": []
+  },
+  "model": {
+    "passed": 189,
+    "total": 189,
+    "scope": "Node model tests run actual extracted application functions with simulated DOM and storage, plus structural checks. Not browser or production acceptance."
+  },
+  "server": {
+    "total": 132,
+    "passed": 132,
+    "failures": 0,
+    "newVerificationTests": 74
+  },
+  "screens": 42,
+  "variables": 171,
+  "status": {
+    "green": 0,
+    "yellow": 125,
+    "red": 46,
+    "productionVerifiedPercent": 0,
+    "partialCoveragePercent": 73
+  },
+  "realDeliveryTested": false,
+  "realAccountAcceptanceTested": false,
+  "scope": "Isolated Chrome responsive/interaction assertions; fake provider/database contracts; no real SMS/email, physical second device or two-account production acceptance."
+}

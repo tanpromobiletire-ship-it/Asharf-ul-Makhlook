@@ -1,41 +1,11 @@
 {
-  "build": "V16-account-display-audit-2026-10-04ap",
-  "recordedAt": "2026-10-05T00:31:15.256Z",
-  "browser": {
-    "passed": 1159,
-    "total": 1159,
-    "errors": [],
-    "failures": []
-  },
-  "model": {
-    "passed": 189,
-    "total": 189
-  },
-  "api": {
-    "passed": 47,
-    "total": 47
-  },
-  "node": {
-    "passed": 58,
-    "total": 58
-  },
-  "sourceHashes": {
-    "index.html": "26dc90c9a7f1f4ae29705aaee62f16431fef6209a60a572af5cf0463245cc787",
-    "tests/organized-navigation.mjs": "31844968fd5dade0c9e259c0951eef2e973c48bd8743c703ddaca7d87d04977b",
-    "tests/account-model-regression.mjs": "2048fb8ba24771bb25f3fb147a909bb18780f1ca0b3e12fea10a638842cd1b4a",
-    "server/server.js": "56b47ec768a834919cc5375d0882e1d98c42844acc73321edf751e23b06de426",
-    "server/advertising-rates.js": "736425382f7fce6c76e55ccc898bf97e872dc0612353ff7e6a46b1107af9fdf1"
-  },
-  "normalizedSHA256": "26dc90c9a7f1f4ae29705aaee62f16431fef6209a60a572af5cf0463245cc787",
-  "screens": 42,
-  "requirements": 171,
-  "status": {
-    "green": 0,
-    "yellow": 125,
-    "red": 46
-  },
-  "implementationCoveragePercent": 73,
+  "build": "V16-contact-verification-2026-10-04aq",
+  "phase": "tested awaiting publish",
+  "evidence": "Contact-Verification-Results.json",
+  "green": 0,
+  "yellow": 125,
+  "red": 46,
   "productionVerifiedPercent": 0,
-  "productionAcceptance": "Full 12-gate acceptance outstanding",
-  "deployed": false
+  "partialCoveragePercent": 73,
+  "htmlSha256": "4b962e4465d8f54e8c8c76f5ca04138b0cba453ce1c48826f1a4b4e39e647843"
 }

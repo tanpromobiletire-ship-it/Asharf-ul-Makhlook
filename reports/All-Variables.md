@@ -1,6 +1,6 @@
 # Asharf-ul-Makhlook — complete requirements
 
-Build: V16-account-display-audit-2026-10-04ap. **171 requirements; 0 green; 125 yellow; 46 red. Strict production-verified completion: 0%.**
+Build: V16-contact-verification-2026-10-04aq. **171 requirements; 0 green; 125 yellow; 46 red. Strict production-verified completion: 0%.**
 
 All 146 prior requirement IDs and screens are retained. VAR-147–171 track every advertising, payment, wallet, conversion and marketing component.
 
@@ -25,7 +25,7 @@ All 146 prior requirement IDs and screens are retained. VAR-147–171 track ever
 
 | ID | Variable | Status | Group | Screen | Built/evidence | Missing / next |
 |---|---|---|---|---|---|---|
-| VAR-001 | Production account connection | 🟡 Yellow | Launch connections | cloudAccount | Pending registration captures country/region, Need Help/Help Provider/Both, and versioned prototype-rules consent with a server timestamp. API login and existing sessions require active status plus verified email and phone. Verification delivery and real authenticated acceptance remain unconnected. | Connect verification delivery, recovery/MFA and abuse limits; execute real two-account and full production verification. |
+| VAR-001 | Production account connection | 🟡 Yellow | Launch connections | cloudAccount | Pending registration captures country/region, Need Help/Help Provider/Both, and versioned prototype-rules consent with a server timestamp. API login and existing sessions require active status plus verified email and phone. Provider-backed endpoints, durable limits and on-page code submission implemented; real delivery setup and real account acceptance pending. | Connect verification delivery, recovery/MFA and abuse limits; execute real two-account and full production verification. |
 | VAR-002 | Public, member & admin statistics workspace | 🟡 Yellow | Prototype workflows | statistics | Statistics views, metric search and state handling are implemented. Live database/public stats and member API foundations are connected; admin production metrics remain unconnected. | Complete all individual metric and authorization tests; see the detailed Statistics variables. |
 | VAR-003 | Core navigation shell | 🟡 Yellow | Prototype workflows | explore | All planned primary sections can be opened. | Re-run current-version acceptance after any change; downgrade to yellow until reverified. |
 | VAR-004 | Role/view switcher | 🟡 Yellow | Prototype workflows | overview | Caseworker, Applicant and Supporter demo views are available. | Re-run current-version acceptance after any change; downgrade to yellow until reverified. |
@@ -199,3 +199,5 @@ All 146 prior requirement IDs and screens are retained. VAR-147–171 track ever
 
 
 Current account/display release: 1159 Chrome checks, 189 model/structure checks, 47 API checks and 58 Node tests passed. All 171 IDs remain, with 0 green / 125 yellow / 46 red. Production completion 0%; partial implementation coverage 73%. See Release-Account-Display-Audit.md and Publication-Latest.md for current publication scope.
+
+Current build verification update: see Release-Contact-Verification.md. Passing isolated tests does not change the 12 production gates.
