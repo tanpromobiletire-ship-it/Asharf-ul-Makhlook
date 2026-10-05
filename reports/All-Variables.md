@@ -1,6 +1,6 @@
 # Asharf-ul-Makhlook — complete requirements
 
-Build: V16-conversion-diagnostics-2026-10-04ao. **171 requirements; 0 green; 125 yellow; 46 red. Strict production-verified completion: 0%.**
+Build: V16-account-display-audit-2026-10-04ap. **171 requirements; 0 green; 125 yellow; 46 red. Strict production-verified completion: 0%.**
 
 All 146 prior requirement IDs and screens are retained. VAR-147–171 track every advertising, payment, wallet, conversion and marketing component.
 
@@ -196,3 +196,6 @@ All 146 prior requirement IDs and screens are retained. VAR-147–171 track ever
 | VAR-169 | Advertising transaction records and history | 🟡 Yellow | Advertising & growth | advertising | Crypto demo receipts record asset/network/amount/quote/fee/history; chain hashes and confirmations remain null. | Connect real chain watchers, transaction verification, explorers, replay/reorganization controls and reconciliation. |
 | VAR-170 | Advertising blockchain broadcast and confirmations | 🔴 Red | Advertising & growth | advertising | No real transaction broadcast, address generation or confirmations. | Implement matching assets and chains, broadcast status, pending/failed/confirmed records, finality and settlement. |
 | VAR-171 | Advertising quote expiry and payment exceptions | 🔴 Red | Advertising & growth | advertising | Expired local quotes fail closed; no real under/over/late-payment processing. | Implement authoritative quotes, idempotent webhooks, expiry, late payments, underpayments/overpayments and refund policies. |
+
+
+Current account/display release: 1159 Chrome checks, 189 model/structure checks, 47 API checks and 58 Node tests passed. All 171 IDs remain, with 0 green / 125 yellow / 46 red. Production completion 0%; partial implementation coverage 73%. See Release-Account-Display-Audit.md and Publication-Latest.md for current publication scope.

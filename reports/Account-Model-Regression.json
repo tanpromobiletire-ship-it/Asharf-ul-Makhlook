@@ -1,0 +1,766 @@
+{
+  "build": "V16-account-display-audit-2026-10-04ap",
+  "scope": "Node model tests run actual extracted application functions with simulated DOM and storage, plus structural checks. Not browser or production acceptance.",
+  "passed": 189,
+  "total": 189,
+  "results": [
+    {
+      "name": "Application JavaScript syntax",
+      "passed": true
+    },
+    {
+      "name": "Load 10 personas",
+      "passed": true
+    },
+    {
+      "name": "Exactly 10 accounts",
+      "passed": true
+    },
+    {
+      "name": "Seed keeps visitor",
+      "passed": true
+    },
+    {
+      "name": "Idempotent seed",
+      "passed": true
+    },
+    {
+      "name": "No plaintext demo password in records",
+      "passed": true
+    },
+    {
+      "name": "All fixture contacts unique",
+      "passed": true
+    },
+    {
+      "name": "Sign in Boy TEST-PERSON-01",
+      "passed": true
+    },
+    {
+      "name": "Profile update TEST-PERSON-01",
+      "passed": true
+    },
+    {
+      "name": "Profile persisted TEST-PERSON-01",
+      "passed": true
+    },
+    {
+      "name": "Discard draft TEST-PERSON-01",
+      "passed": true
+    },
+    {
+      "name": "Send message TEST-PERSON-01",
+      "passed": true
+    },
+    {
+      "name": "Message participant scope TEST-PERSON-01",
+      "passed": true
+    },
+    {
+      "name": "Blocked send rejected TEST-PERSON-01",
+      "passed": true
+    },
+    {
+      "name": "Remove own block TEST-PERSON-01",
+      "passed": true
+    },
+    {
+      "name": "Recipient privacy enforced TEST-PERSON-01",
+      "passed": true
+    },
+    {
+      "name": "Sign in Boy TEST-PERSON-02",
+      "passed": true
+    },
+    {
+      "name": "Profile update TEST-PERSON-02",
+      "passed": true
+    },
+    {
+      "name": "Profile persisted TEST-PERSON-02",
+      "passed": true
+    },
+    {
+      "name": "Discard draft TEST-PERSON-02",
+      "passed": true
+    },
+    {
+      "name": "Send message TEST-PERSON-02",
+      "passed": true
+    },
+    {
+      "name": "Message participant scope TEST-PERSON-02",
+      "passed": true
+    },
+    {
+      "name": "Blocked send rejected TEST-PERSON-02",
+      "passed": true
+    },
+    {
+      "name": "Remove own block TEST-PERSON-02",
+      "passed": true
+    },
+    {
+      "name": "Recipient privacy enforced TEST-PERSON-02",
+      "passed": true
+    },
+    {
+      "name": "Sign in Girl TEST-PERSON-03",
+      "passed": true
+    },
+    {
+      "name": "Profile update TEST-PERSON-03",
+      "passed": true
+    },
+    {
+      "name": "Profile persisted TEST-PERSON-03",
+      "passed": true
+    },
+    {
+      "name": "Discard draft TEST-PERSON-03",
+      "passed": true
+    },
+    {
+      "name": "Send message TEST-PERSON-03",
+      "passed": true
+    },
+    {
+      "name": "Message participant scope TEST-PERSON-03",
+      "passed": true
+    },
+    {
+      "name": "Blocked send rejected TEST-PERSON-03",
+      "passed": true
+    },
+    {
+      "name": "Remove own block TEST-PERSON-03",
+      "passed": true
+    },
+    {
+      "name": "Recipient privacy enforced TEST-PERSON-03",
+      "passed": true
+    },
+    {
+      "name": "Sign in Girl TEST-PERSON-04",
+      "passed": true
+    },
+    {
+      "name": "Profile update TEST-PERSON-04",
+      "passed": true
+    },
+    {
+      "name": "Profile persisted TEST-PERSON-04",
+      "passed": true
+    },
+    {
+      "name": "Discard draft TEST-PERSON-04",
+      "passed": true
+    },
+    {
+      "name": "Send message TEST-PERSON-04",
+      "passed": true
+    },
+    {
+      "name": "Message participant scope TEST-PERSON-04",
+      "passed": true
+    },
+    {
+      "name": "Blocked send rejected TEST-PERSON-04",
+      "passed": true
+    },
+    {
+      "name": "Remove own block TEST-PERSON-04",
+      "passed": true
+    },
+    {
+      "name": "Recipient privacy enforced TEST-PERSON-04",
+      "passed": true
+    },
+    {
+      "name": "Sign in Man TEST-PERSON-05",
+      "passed": true
+    },
+    {
+      "name": "Profile update TEST-PERSON-05",
+      "passed": true
+    },
+    {
+      "name": "Profile persisted TEST-PERSON-05",
+      "passed": true
+    },
+    {
+      "name": "Discard draft TEST-PERSON-05",
+      "passed": true
+    },
+    {
+      "name": "Send message TEST-PERSON-05",
+      "passed": true
+    },
+    {
+      "name": "Message participant scope TEST-PERSON-05",
+      "passed": true
+    },
+    {
+      "name": "Blocked send rejected TEST-PERSON-05",
+      "passed": true
+    },
+    {
+      "name": "Remove own block TEST-PERSON-05",
+      "passed": true
+    },
+    {
+      "name": "Recipient privacy enforced TEST-PERSON-05",
+      "passed": true
+    },
+    {
+      "name": "Sign in Man TEST-PERSON-06",
+      "passed": true
+    },
+    {
+      "name": "Profile update TEST-PERSON-06",
+      "passed": true
+    },
+    {
+      "name": "Profile persisted TEST-PERSON-06",
+      "passed": true
+    },
+    {
+      "name": "Discard draft TEST-PERSON-06",
+      "passed": true
+    },
+    {
+      "name": "Send message TEST-PERSON-06",
+      "passed": true
+    },
+    {
+      "name": "Message participant scope TEST-PERSON-06",
+      "passed": true
+    },
+    {
+      "name": "Blocked send rejected TEST-PERSON-06",
+      "passed": true
+    },
+    {
+      "name": "Remove own block TEST-PERSON-06",
+      "passed": true
+    },
+    {
+      "name": "Recipient privacy enforced TEST-PERSON-06",
+      "passed": true
+    },
+    {
+      "name": "Sign in Woman TEST-PERSON-07",
+      "passed": true
+    },
+    {
+      "name": "Profile update TEST-PERSON-07",
+      "passed": true
+    },
+    {
+      "name": "Profile persisted TEST-PERSON-07",
+      "passed": true
+    },
+    {
+      "name": "Discard draft TEST-PERSON-07",
+      "passed": true
+    },
+    {
+      "name": "Send message TEST-PERSON-07",
+      "passed": true
+    },
+    {
+      "name": "Message participant scope TEST-PERSON-07",
+      "passed": true
+    },
+    {
+      "name": "Blocked send rejected TEST-PERSON-07",
+      "passed": true
+    },
+    {
+      "name": "Remove own block TEST-PERSON-07",
+      "passed": true
+    },
+    {
+      "name": "Recipient privacy enforced TEST-PERSON-07",
+      "passed": true
+    },
+    {
+      "name": "Sign in Woman TEST-PERSON-08",
+      "passed": true
+    },
+    {
+      "name": "Profile update TEST-PERSON-08",
+      "passed": true
+    },
+    {
+      "name": "Profile persisted TEST-PERSON-08",
+      "passed": true
+    },
+    {
+      "name": "Discard draft TEST-PERSON-08",
+      "passed": true
+    },
+    {
+      "name": "Send message TEST-PERSON-08",
+      "passed": true
+    },
+    {
+      "name": "Message participant scope TEST-PERSON-08",
+      "passed": true
+    },
+    {
+      "name": "Blocked send rejected TEST-PERSON-08",
+      "passed": true
+    },
+    {
+      "name": "Remove own block TEST-PERSON-08",
+      "passed": true
+    },
+    {
+      "name": "Recipient privacy enforced TEST-PERSON-08",
+      "passed": true
+    },
+    {
+      "name": "Sign in Senior woman TEST-PERSON-09",
+      "passed": true
+    },
+    {
+      "name": "Profile update TEST-PERSON-09",
+      "passed": true
+    },
+    {
+      "name": "Profile persisted TEST-PERSON-09",
+      "passed": true
+    },
+    {
+      "name": "Discard draft TEST-PERSON-09",
+      "passed": true
+    },
+    {
+      "name": "Send message TEST-PERSON-09",
+      "passed": true
+    },
+    {
+      "name": "Message participant scope TEST-PERSON-09",
+      "passed": true
+    },
+    {
+      "name": "Blocked send rejected TEST-PERSON-09",
+      "passed": true
+    },
+    {
+      "name": "Remove own block TEST-PERSON-09",
+      "passed": true
+    },
+    {
+      "name": "Recipient privacy enforced TEST-PERSON-09",
+      "passed": true
+    },
+    {
+      "name": "Sign in Senior man TEST-PERSON-10",
+      "passed": true
+    },
+    {
+      "name": "Profile update TEST-PERSON-10",
+      "passed": true
+    },
+    {
+      "name": "Profile persisted TEST-PERSON-10",
+      "passed": true
+    },
+    {
+      "name": "Discard draft TEST-PERSON-10",
+      "passed": true
+    },
+    {
+      "name": "Send message TEST-PERSON-10",
+      "passed": true
+    },
+    {
+      "name": "Message participant scope TEST-PERSON-10",
+      "passed": true
+    },
+    {
+      "name": "Blocked send rejected TEST-PERSON-10",
+      "passed": true
+    },
+    {
+      "name": "Remove own block TEST-PERSON-10",
+      "passed": true
+    },
+    {
+      "name": "Recipient privacy enforced TEST-PERSON-10",
+      "passed": true
+    },
+    {
+      "name": "Rapid message IDs unique",
+      "passed": true
+    },
+    {
+      "name": "Blank name rejected",
+      "passed": true
+    },
+    {
+      "name": "Invalid email rejected",
+      "passed": true
+    },
+    {
+      "name": "Duplicate email rejected",
+      "passed": true
+    },
+    {
+      "name": "Duplicate phone rejected",
+      "passed": true
+    },
+    {
+      "name": "Malformed phone rejected",
+      "passed": true
+    },
+    {
+      "name": "Storage error rejected",
+      "passed": true
+    },
+    {
+      "name": "Storage error rolls profile back",
+      "passed": true
+    },
+    {
+      "name": "Contact edit saved",
+      "passed": true
+    },
+    {
+      "name": "Contact edit resets flags",
+      "passed": true
+    },
+    {
+      "name": "All fixture records persisted",
+      "passed": true
+    },
+    {
+      "name": "All messages persisted",
+      "passed": true
+    },
+    {
+      "name": "171 requirements retained",
+      "passed": true
+    },
+    {
+      "name": "No duplicate static element IDs",
+      "passed": true
+    },
+    {
+      "name": "42 screens retained",
+      "passed": true
+    },
+    {
+      "name": "Route exists overview",
+      "passed": true
+    },
+    {
+      "name": "Route exists getHelpHub",
+      "passed": true
+    },
+    {
+      "name": "Route exists helpOthersHub",
+      "passed": true
+    },
+    {
+      "name": "Route exists communityHub",
+      "passed": true
+    },
+    {
+      "name": "Route exists messages",
+      "passed": true
+    },
+    {
+      "name": "Route exists dashboard",
+      "passed": true
+    },
+    {
+      "name": "Route exists explore",
+      "passed": true
+    },
+    {
+      "name": "Route exists cloudAccount",
+      "passed": true
+    },
+    {
+      "name": "Route exists accounts",
+      "passed": true
+    },
+    {
+      "name": "Route exists getHelpHub",
+      "passed": true
+    },
+    {
+      "name": "Route exists requests",
+      "passed": true
+    },
+    {
+      "name": "Route exists offers",
+      "passed": true
+    },
+    {
+      "name": "Route exists serviceDirectory",
+      "passed": true
+    },
+    {
+      "name": "Route exists caseJourney",
+      "passed": true
+    },
+    {
+      "name": "Route exists appeals",
+      "passed": true
+    },
+    {
+      "name": "Route exists helpOthersHub",
+      "passed": true
+    },
+    {
+      "name": "Route exists providerProfiles",
+      "passed": true
+    },
+    {
+      "name": "Route exists availabilityCalendar",
+      "passed": true
+    },
+    {
+      "name": "Route exists giving",
+      "passed": true
+    },
+    {
+      "name": "Route exists trustCoordination",
+      "passed": true
+    },
+    {
+      "name": "Route exists delivery",
+      "passed": true
+    },
+    {
+      "name": "Route exists review",
+      "passed": true
+    },
+    {
+      "name": "Route exists statistics",
+      "passed": true
+    },
+    {
+      "name": "Route exists communityHub",
+      "passed": true
+    },
+    {
+      "name": "Route exists worldHelp",
+      "passed": true
+    },
+    {
+      "name": "Route exists groupsHub",
+      "passed": true
+    },
+    {
+      "name": "Route exists stories",
+      "passed": true
+    },
+    {
+      "name": "Route exists messages",
+      "passed": true
+    },
+    {
+      "name": "Route exists files",
+      "passed": true
+    },
+    {
+      "name": "Route exists sharing",
+      "passed": true
+    },
+    {
+      "name": "Route exists safetyHub",
+      "passed": true
+    },
+    {
+      "name": "Route exists alerts",
+      "passed": true
+    },
+    {
+      "name": "Route exists concerns",
+      "passed": true
+    },
+    {
+      "name": "Route exists purpose",
+      "passed": true
+    },
+    {
+      "name": "Route exists variableAudit",
+      "passed": true
+    },
+    {
+      "name": "Route exists roadmap",
+      "passed": true
+    },
+    {
+      "name": "Route exists shell",
+      "passed": true
+    },
+    {
+      "name": "Route exists progress",
+      "passed": true
+    },
+    {
+      "name": "Route exists verification",
+      "passed": true
+    },
+    {
+      "name": "Route exists gateMatrix",
+      "passed": true
+    },
+    {
+      "name": "Route exists productionEvidence",
+      "passed": true
+    },
+    {
+      "name": "Route exists verificationLab",
+      "passed": true
+    },
+    {
+      "name": "Route exists history",
+      "passed": true
+    },
+    {
+      "name": "Route exists preview",
+      "passed": true
+    },
+    {
+      "name": "Route exists integrations",
+      "passed": true
+    },
+    {
+      "name": "Route exists requests",
+      "passed": true
+    },
+    {
+      "name": "Route exists worldHelp",
+      "passed": true
+    },
+    {
+      "name": "Route exists offers",
+      "passed": true
+    },
+    {
+      "name": "Route exists messages",
+      "passed": true
+    },
+    {
+      "name": "Route exists serviceDirectory",
+      "passed": true
+    },
+    {
+      "name": "Route exists files",
+      "passed": true
+    },
+    {
+      "name": "Route exists caseJourney",
+      "passed": true
+    },
+    {
+      "name": "Route exists appeals",
+      "passed": true
+    },
+    {
+      "name": "Route exists concerns",
+      "passed": true
+    },
+    {
+      "name": "Route exists requests",
+      "passed": true
+    },
+    {
+      "name": "Route exists worldHelp",
+      "passed": true
+    },
+    {
+      "name": "Route exists groupsHub",
+      "passed": true
+    },
+    {
+      "name": "Route exists offers",
+      "passed": true
+    },
+    {
+      "name": "Route exists providerProfiles",
+      "passed": true
+    },
+    {
+      "name": "Route exists availabilityCalendar",
+      "passed": true
+    },
+    {
+      "name": "Route exists giving",
+      "passed": true
+    },
+    {
+      "name": "Route exists messages",
+      "passed": true
+    },
+    {
+      "name": "Route exists caseJourney",
+      "passed": true
+    },
+    {
+      "name": "Route exists stories",
+      "passed": true
+    },
+    {
+      "name": "Route exists worldHelp",
+      "passed": true
+    },
+    {
+      "name": "Route exists groupsHub",
+      "passed": true
+    },
+    {
+      "name": "Route exists messages",
+      "passed": true
+    },
+    {
+      "name": "Route exists files",
+      "passed": true
+    },
+    {
+      "name": "Route exists dashboard",
+      "passed": true
+    },
+    {
+      "name": "Route exists statistics",
+      "passed": true
+    },
+    {
+      "name": "Route exists advertising",
+      "passed": true
+    },
+    {
+      "name": "Route exists requests",
+      "passed": true
+    },
+    {
+      "name": "Route exists concerns",
+      "passed": true
+    },
+    {
+      "name": "Route exists accounts",
+      "passed": true
+    },
+    {
+      "name": "Route exists giving",
+      "passed": true
+    },
+    {
+      "name": "Hidden display override exists",
+      "passed": true
+    },
+    {
+      "name": "Current roadmap/progress snapshots present",
+      "passed": true
+    }
+  ],
+  "browserRegression": "1159/1159 Chrome scoped regression; not full real-account/device production acceptance",
+  "deployed": false
+}

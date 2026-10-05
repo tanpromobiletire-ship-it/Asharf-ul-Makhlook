@@ -1,6 +1,6 @@
 # Asharf-ul-Makhlook V16
 
-Current build: V16-conversion-diagnostics-2026-10-04ao.
+Current build: V16-account-display-audit-2026-10-04ap.
 
 ## Integrity
 
@@ -142,3 +142,6 @@ Current application source is live and matches the tested hash. Both services de
 
 ## Conversion diagnostics release
 See reports/Release-Conversion-Diagnostics.md and reports/Conversion-Diagnostics-Results.json. The backend exposes only safe diagnostic enums and bounded retry guidance. The client blocks repeated checks during cooldown, never automatically polls, and keeps non-USD checkout paused without fresh rates. Provider keys belong only in backend environment settings. Read Publication-Latest.md for current deployment/feed state.
+
+
+Current account/display release: 1159 Chrome checks, 189 model/structure checks, 47 API checks and 58 Node tests passed. All 171 IDs remain, with 0 green / 125 yellow / 46 red. Production completion 0%; partial implementation coverage 73%. See Release-Account-Display-Audit.md and Publication-Latest.md for current publication scope.

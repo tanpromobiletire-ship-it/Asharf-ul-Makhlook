@@ -219,3 +219,6 @@ Campaign copies create unsaved fresh drafts; wallet label/history/restore contro
 
 ## Conversion diagnostics
 Safe failure categories, Retry-After, capped exponential backoff, customer guidance, owner setup links and secret-exclusion tests are implemented. 1014 browser, 47 API and 58 Node tests passed. These do not prove the external feed has recovered; read current publication evidence.
+
+
+Account/display audit build ap: fixed hidden reply display, missing profile fields, empty-recipient guidance, local unblock UI and message ID collisions. Added 10 fictional personas and current roadmap snapshot. Full production integration gaps remain; see Release-Account-Display-Audit.md.
