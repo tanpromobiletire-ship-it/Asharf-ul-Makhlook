@@ -1,0 +1,111 @@
+{
+  "build": "V16-account-display-audit-2026-10-04ap",
+  "commit": "243f6446e6a2d6c4ff3ffbca01828faf20957bff",
+  "checkedAt": "2026-10-05T00:33:05.196Z",
+  "passed": 17,
+  "total": 17,
+  "checks": [
+    {
+      "name": "Published HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "Published source equals tested source",
+      "passed": true
+    },
+    {
+      "name": "Correct build",
+      "passed": true
+    },
+    {
+      "name": "Ten persona loader exists",
+      "passed": true
+    },
+    {
+      "name": "Hidden display fix published",
+      "passed": true
+    },
+    {
+      "name": "Profile fields published",
+      "passed": true
+    },
+    {
+      "name": "Unblock management published",
+      "passed": true
+    },
+    {
+      "name": "Roadmap progress snapshots published",
+      "passed": true
+    },
+    {
+      "name": "API and database healthy",
+      "passed": true
+    },
+    {
+      "name": "/api/public/stats",
+      "passed": true
+    },
+    {
+      "name": "/api/member/stats",
+      "passed": true
+    },
+    {
+      "name": "/api/me",
+      "passed": true
+    },
+    {
+      "name": "/reports/Release-Account-Display-Audit.md",
+      "passed": true
+    },
+    {
+      "name": "/reports/All-Variables.csv",
+      "passed": true
+    },
+    {
+      "name": "All 171 IDs published",
+      "passed": true
+    },
+    {
+      "name": "Rates fresh or safely unavailable",
+      "passed": true
+    },
+    {
+      "name": "Local preview updated",
+      "passed": true
+    }
+  ],
+  "conversionAvailable": false,
+  "conversionDiagnostic": {
+    "code": "rate_limited",
+    "upstreamStatus": 429,
+    "endpoint": "exchange_rates",
+    "retryAfterSeconds": 60
+  },
+  "productionAcceptance": "Full 12 gates outstanding; these are scoped live smoke checks",
+  "accountReadiness": {
+    "status": 200,
+    "mode": "identity_check_only",
+    "membershipSignupConnected": false,
+    "phoneVerificationRequired": true,
+    "providers": [
+      {
+        "id": "google",
+        "configured": false,
+        "enabled": false,
+        "available": false
+      },
+      {
+        "id": "microsoft",
+        "configured": false,
+        "enabled": false,
+        "available": false
+      },
+      {
+        "id": "apple",
+        "configured": false,
+        "enabled": false,
+        "available": false
+      }
+    ]
+  }
+}

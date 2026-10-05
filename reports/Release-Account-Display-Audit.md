@@ -17,3 +17,6 @@ Still missing or incomplete: approved production-account/profile synchronization
 The two real emails, phone numbers and supplied address are not embedded in this update or public fixtures. No messages were sent to those contacts. Real verification tests remain blocked by missing provider integration; fictional personas do not satisfy the two real authenticated accounts gate.
 
 Publication and live evidence: see Publication-Latest.md. Application source is tested before deployment; no real account/contact records are manually changed by these tests.
+
+
+Published verification: 17/17 scoped live checks passed; public source matches exact tested hash. Database connected; private endpoints require login. Live CoinGecko feed remains rate limited. See Publication-Latest.md and Account-Display-Live.json for dated deployment evidence.

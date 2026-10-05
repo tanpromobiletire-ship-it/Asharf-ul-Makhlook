@@ -37,5 +37,7 @@
   "implementationCoveragePercent": 73,
   "productionVerifiedPercent": 0,
   "productionAcceptance": "Full 12-gate acceptance outstanding",
-  "deployed": false
+  "deployed": true,
+  "applicationCommit": "243f6446e6a2d6c4ff3ffbca01828faf20957bff",
+  "liveEvidence": "Account-Display-Live.json"
 }
