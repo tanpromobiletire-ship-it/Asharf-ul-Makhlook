@@ -1,0 +1,114 @@
+{
+  "build": "V16-contact-verification-2026-10-04aq",
+  "checkedAt": "2026-10-05T01:06:23.933Z",
+  "commit": "28d6d744b396d3366d1fd481a56e6d7b4515427c",
+  "htmlSha256": "4b962e4465d8f54e8c8c76f5ca04138b0cba453ce1c48826f1a4b4e39e647843",
+  "passed": 20,
+  "total": 20,
+  "results": [
+    {
+      "name": "Public site HTTP 200",
+      "pass": true
+    },
+    {
+      "name": "Public HTML exactly matches tested source",
+      "pass": true
+    },
+    {
+      "name": "Correct current build served",
+      "pass": true
+    },
+    {
+      "name": "Verification panel published",
+      "pass": true
+    },
+    {
+      "name": "All 42 screen sections retained",
+      "pass": true
+    },
+    {
+      "name": "All 171 unique requirement IDs retained",
+      "pass": true
+    },
+    {
+      "name": "Backend healthy and database connected",
+      "pass": true
+    },
+    {
+      "name": "Verification readiness reachable",
+      "pass": true
+    },
+    {
+      "name": "New durable verification schema initialized",
+      "pass": true
+    },
+    {
+      "name": "Delivery remains explicitly disabled",
+      "pass": true
+    },
+    {
+      "name": "No real acceptance falsely claimed",
+      "pass": true
+    },
+    {
+      "name": "Status exposes no credentials",
+      "pass": true
+    },
+    {
+      "name": "Unapproved Origin rejected",
+      "pass": true
+    },
+    {
+      "name": "Wrong method rejected",
+      "pass": true
+    },
+    {
+      "name": "Unconfigured send fails safely without delivery",
+      "pass": true
+    },
+    {
+      "name": "Member endpoint requires authentication",
+      "pass": true
+    },
+    {
+      "name": "Published CSV contains all 171 IDs",
+      "pass": true
+    },
+    {
+      "name": "Current release report accessible",
+      "pass": true
+    },
+    {
+      "name": "Private setup guide accessible",
+      "pass": true
+    },
+    {
+      "name": "Social membership remains honestly unavailable",
+      "pass": true
+    }
+  ],
+  "readiness": {
+    "provider": "Twilio Verify",
+    "configured": false,
+    "channels": {
+      "sms": false,
+      "email": false
+    },
+    "emailSetupRequired": "Configure the SendGrid integration in the Verify service",
+    "databaseReady": true,
+    "connected": false,
+    "realAccountAcceptanceVerified": false
+  },
+  "noRealMessagesSent": true,
+  "scope": "Read-only published source/health/configuration checks plus synthetic disabled-send rejection. No real account creation, delivery or activation.",
+  "deployments": {
+    "api": "dep-db1feqegekts73dj37m0",
+    "frontend": "dep-db1fervavr4c73blmsp0",
+    "status": "live"
+  },
+  "errorLogReview": {
+    "from": "2026-10-05T01:03:30Z",
+    "appErrorLogs": 0,
+    "scope": "API logs in the deployment window"
+  }
+}

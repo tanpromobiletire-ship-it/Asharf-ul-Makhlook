@@ -1,11 +1,17 @@
 {
   "build": "V16-contact-verification-2026-10-04aq",
-  "phase": "tested awaiting publish",
-  "evidence": "Contact-Verification-Results.json",
-  "green": 0,
-  "yellow": 125,
-  "red": 46,
-  "productionVerifiedPercent": 0,
-  "partialCoveragePercent": 73,
-  "htmlSha256": "4b962e4465d8f54e8c8c76f5ca04138b0cba453ce1c48826f1a4b4e39e647843"
+  "phase": "application deployed; live checks passed",
+  "commit": "28d6d744b396d3366d1fd481a56e6d7b4515427c",
+  "deployments": {
+    "api": "dep-db1feqegekts73dj37m0",
+    "frontend": "dep-db1fervavr4c73blmsp0",
+    "status": "live"
+  },
+  "htmlSha256": "4b962e4465d8f54e8c8c76f5ca04138b0cba453ce1c48826f1a4b4e39e647843",
+  "live": {
+    "passed": 20,
+    "total": 20
+  },
+  "providerConfigured": false,
+  "realDeliveryTested": false
 }

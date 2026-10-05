@@ -761,6 +761,6 @@
       "passed": true
     }
   ],
-  "browserRegression": "1159/1159 Chrome scoped regression; not full real-account/device production acceptance",
+  "browserRegression": "Prepared; blocked by Windows remote disconnection",
   "deployed": false
 }
